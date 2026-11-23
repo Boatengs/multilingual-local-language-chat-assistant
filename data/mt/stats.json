@@ -1,0 +1,29 @@
+{
+ "flores": {
+  "ewe": 1012,
+  "hau": 1012,
+  "twi": 1012
+ },
+ "flores_source_side": {
+  "ewe/en": 1012,
+  "hau/en": 1012,
+  "twi/en": 1012
+ },
+ "ghananlp": {
+  "ewe": 500,
+  "gaa": 500,
+  "twi": 500
+ },
+ "ghananlp_source_side": {
+  "ewe/en": 500,
+  "gaa/en": 500,
+  "twi/en": 280,
+  "twi/local": 220
+ },
+ "twi_terms": {
+  "twi": 1100
+ },
+ "twi_terms_source_side": {
+  "twi/en": 1100
+ }
+}
