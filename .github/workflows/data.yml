@@ -21,7 +21,7 @@ jobs:
         if: ${{ contains(github.event.head_commit.message, '[make-mt]') }}
         run: |
           pip install torch --index-url https://download.pytorch.org/whl/cpu
-          pip install "transformers>=4.48,<5" sentencepiece sacremoses protobuf numpy
+          pip install "transformers>=4.48,<5" sentencepiece sacremoses protobuf numpy requests beautifulsoup4 lxml
           PYTHONPATH=src python -m kasa.e2e make-mt --questions data/qa/questions_en.csv --out data/qa/questions_mt.csv
       - name: Commit
         run: |
