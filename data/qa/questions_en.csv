@@ -1,0 +1,21 @@
+id,topic,question,answer,source_url
+health_1,health,In what year did Ghana pass its national health insurance law?,2003 (put into effect in 2004),https://ssa.gov/policy/docs/progdesc/ssptw/2006-2007/africa/ghana.pdf
+health_2,health,Does Ghana's National Health Insurance cover maternity care?,Yes,https://www.ssa.gov/policy/docs/progdesc/ssptw/2016-2017/africa/ghana.html
+health_3,health,What is the name of the malaria vaccine Ghana began giving children in 2019?,"RTS,S",https://afro.who.int/news/malaria-vaccine-pilot-launched-ghana
+health_4,health,In which month and year did Ghana start giving the malaria vaccine in its pilot programme?,April 2019,https://www.who.int/news-room/photo-story/detail/the-malaria-vaccine-first-babies
+health_5,health,"Which three countries piloted the RTS,S malaria vaccine?","Ghana, Kenya and Malawi",https://www.who.int/news-room/photo-story/detail/the-malaria-vaccine-first-babies
+money_1,money,Is the E-levy still charged on mobile money transfers in Ghana?,"No, it was repealed from 2 April 2025",https://globaltaxnews.ey.com/news/2025-0844
+money_2,money,What was the rate of the E-levy on electronic transfers before it was abolished?,1%,https://globaltaxnews.ey.com/news/2025-0844
+money_3,money,How many pesewas make one Ghana cedi?,100,https://www.open.ssa.gov/policy/docs/progdesc/ssptw/2014-2015/africa/ghana.pdf
+money_4,money,What does SSNIT stand for?,Social Security and National Insurance Trust,https://www.ssnit.org.gh/?p=9
+money_5,money,In what year was SSNIT established?,1972,https://www.ssnit.org.gh/?p=9
+government_1,government,How many regions does Ghana have?,16,https://www.britannica.com/place/Ghana/Government-and-society
+government_2,government,What is the minimum age to vote in Ghana?,18,https://oxfordbusinessgroup.com/reports/ghana/2020-report/economy/body-politic-elections-solidify-a-prolonged-period-of-democratic-rule
+government_3,government,"Under the 1992 Constitution, how long is a presidential term in Ghana and how many terms can a president serve?","Four years, at most two terms",https://www.britannica.com/place/Ghana/Government-and-society
+government_4,government,In what year was Ghana's current constitution approved in a referendum?,1992,https://oxfordbusinessgroup.com/reports/ghana/2022-report/economy/body-politic-a-briefing-on-ghanas-political-structure-and-most-recent-general-elections
+government_5,government,On what date are Ghana's presidential and parliamentary elections usually held?,"7 December, every four years",https://en.wikipedia.org/wiki/Elections_in_Ghana
+culture_1,culture,Which people celebrate the Homowo festival?,The Ga people,https://en.wikipedia.org/wiki/Homowo
+culture_2,culture,What does the name Homowo mean?,To hoot at hunger,https://ghanaculture.gov.gh/festivals-list/
+culture_3,culture,Which people celebrate the Hogbetsotso festival?,The Anlo (Ewe) people,https://www.graphic.com.gh/entertainment/showbiz-news/ghana-month-vibrant-festivals-showcasing-our-rich-heritage.html
+culture_4,culture,When is the Hogbetsotso festival celebrated?,The first Saturday of November,https://www.graphic.com.gh/entertainment/showbiz-news/ghana-month-vibrant-festivals-showcasing-our-rich-heritage.html
+culture_5,culture,What Akan day name is given to a boy born on Saturday?,Kwame,https://Www.wikipedia.org/wiki/Ghanaian_name
