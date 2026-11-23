@@ -77,13 +77,14 @@ def bleu(hyps, refs) -> float:
     return BLEU().corpus_score(hyps, [refs]).score
 
 
-def bootstrap_chrf(hyps, refs, n=300, seed=42):
+def bootstrap_chrf(hyps, refs, n=1000, seed=42):
+    """Resample sentences; chrF++ is recomputed from summed sentence statistics, which equals the corpus score."""
+    from sacrebleu.metrics import CHRF
+
+    c = CHRF(word_order=2)
+    stats = np.array(c._extract_corpus_statistics(hyps, [refs]), dtype=float)
     rng = np.random.default_rng(seed)
-    hyps, refs = np.array(hyps, dtype=object), np.array(refs, dtype=object)
-    vals = []
-    for _ in range(n):
-        i = rng.integers(0, len(hyps), len(hyps))
-        vals.append(chrf(list(hyps[i]), list(refs[i])))
+    vals = [c._compute_score_from_stats(list(stats[rng.integers(0, len(stats), len(stats))].sum(0))).score for _ in range(n)]
     return float(np.percentile(vals, 2.5)), float(np.percentile(vals, 97.5))
 
 
