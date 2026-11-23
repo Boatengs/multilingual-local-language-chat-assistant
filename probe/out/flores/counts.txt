@@ -1,0 +1,5 @@
+1012 /tmp/flores200_dataset/devtest/eng_Latn.devtest
+1012 /tmp/flores200_dataset/devtest/twi_Latn.devtest
+1012 /tmp/flores200_dataset/devtest/aka_Latn.devtest
+1012 /tmp/flores200_dataset/devtest/ewe_Latn.devtest
+1012 /tmp/flores200_dataset/devtest/hau_Latn.devtest

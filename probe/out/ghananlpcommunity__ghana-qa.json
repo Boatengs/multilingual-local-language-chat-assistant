@@ -1,0 +1,342 @@
+{
+ "repo": "ghananlpcommunity/ghana-qa",
+ "gated": false,
+ "card_data": {
+  "language": [
+   "en",
+   "tw",
+   "ee",
+   "gaa"
+  ],
+  "license": "cc-by-nc-4.0",
+  "task_categories": [
+   "question-answering"
+  ],
+  "tags": [
+   "ghana",
+   "african-languages",
+   "multilingual",
+   "qa",
+   "news"
+  ],
+  "configs": [
+   {
+    "config_name": "all",
+    "data_files": [
+     {
+      "split": "train",
+      "path": [
+       "data/english/*",
+       "data/twi/*",
+       "data/ewe/*",
+       "data/ga/*"
+      ]
+     }
+    ],
+    "default": true
+   },
+   {
+    "config_name": "english",
+    "data_files": [
+     {
+      "split": "train",
+      "path": "data/english/*"
+     }
+    ]
+   },
+   {
+    "config_name": "twi",
+    "data_files": [
+     {
+      "split": "train",
+      "path": "data/twi/*"
+     }
+    ]
+   },
+   {
+    "config_name": "ewe",
+    "data_files": [
+     {
+      "split": "train",
+      "path": "data/ewe/*"
+     }
+    ]
+   },
+   {
+    "config_name": "ga",
+    "data_files": [
+     {
+      "split": "train",
+      "path": "data/ga/*"
+     }
+    ]
+   }
+  ],
+  "dataset_info": [
+   {
+    "config_name": "all",
+    "features": [
+     {
+      "name": "question",
+      "dtype": "string"
+     },
+     {
+      "name": "answer",
+      "dtype": "string"
+     },
+     {
+      "name": "lang",
+      "dtype": "string"
+     }
+    ],
+    "splits": [
+     {
+      "name": "train",
+      "num_examples": 5125796,
+      "num_bytes": 1263496420
+     }
+    ]
+   },
+   {
+    "config_name": "english",
+    "features": [
+     {
+      "name": "question",
+      "dtype": "string"
+     },
+     {
+      "name": "answer",
+      "dtype": "string"
+     },
+     {
+      "name": "lang",
+      "dtype": "string"
+     }
+    ],
+    "splits": [
+     {
+      "name": "train",
+      "num_examples": 1578136,
+      "num_bytes": 327443166
+     }
+    ]
+   },
+   {
+    "config_name": "twi",
+    "features": [
+     {
+      "name": "question",
+      "dtype": "string"
+     },
+     {
+      "name": "answer",
+      "dtype": "string"
+     },
+     {
+      "name": "lang",
+      "dtype": "string"
+     }
+    ],
+    "splits": [
+     {
+      "name": "train",
+      "num_examples": 1182530,
+      "num_bytes": 301565892
+     }
+    ]
+   },
+   {
+    "config_name": "ewe",
+    "features": [
+     {
+      "name": "question",
+      "dtype": "string"
+     },
+     {
+      "name": "answer",
+      "dtype": "string"
+     },
+     {
+      "name": "lang",
+      "dtype": "string"
+     }
+    ],
+    "splits": [
+     {
+      "name": "train",
+      "num_examples": 1182565,
+      "num_bytes": 313315128
+     }
+    ]
+   },
+   {
+    "config_name": "ga",
+    "features": [
+     {
+      "name": "question",
+      "dtype": "string"
+     },
+     {
+      "name": "answer",
+      "dtype": "string"
+     },
+     {
+      "name": "lang",
+      "dtype": "string"
+     }
+    ],
+    "splits": [
+     {
+      "name": "train",
+      "num_examples": 1182565,
+      "num_bytes": 321172234
+     }
+    ]
+   }
+  ]
+ },
+ "files": [
+  [
+   ".gitattributes",
+   46
+  ],
+  [
+   "README.md",
+   7842
+  ],
+  [
+   "data/english/train-00000-of-00001.parquet",
+   81384169
+  ],
+  [
+   "data/ewe/train-00000-of-00001.parquet",
+   80428152
+  ],
+  [
+   "data/ga/train-00000-of-00001.parquet",
+   78316217
+  ],
+  [
+   "data/twi/train-00000-of-00001.parquet",
+   80187051
+  ]
+ ],
+ "readme": "---\nlanguage:\n- en\n- tw\n- ee\n- gaa\nlicense: cc-by-nc-4.0\ntask_categories:\n- question-answering\ntags:\n- ghana\n- african-languages\n- multilingual\n- qa\n- news\nconfigs:\n- config_name: all\n  data_files:\n  - split: train\n    path:\n    - data/english/*\n    - data/twi/*\n    - data/ewe/*\n    - data/ga/*\n  default: true\n- config_name: english\n  data_files:\n  - split: train\n    path: data/english/*\n- config_name: twi\n  data_files:\n  - split: train\n    path: data/twi/*\n- config_name: ewe\n  data_files:\n  - split: train\n    path: data/ewe/*\n- config_name: ga\n  data_files:\n  - split: train\n    path: data/ga/*\ndataset_info:\n- config_name: all\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: lang\n    dtype: string\n  splits:\n  - name: train\n    num_examples: 5125796\n    num_bytes: 1263496420\n- config_name: english\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: lang\n    dtype: string\n  splits:\n  - name: train\n    num_examples: 1578136\n    num_bytes: 327443166\n- config_name: twi\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: lang\n    dtype: string\n  splits:\n  - name: train\n    num_examples: 1182530\n    num_bytes: 301565892\n- config_name: ewe\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: lang\n    dtype: string\n  splits:\n  - name: train\n    num_examples: 1182565\n    num_bytes: 313315128\n- config_name: ga\n  features:\n  - name: question\n    dtype: string\n  - name: answer\n    dtype: string\n  - name: lang\n    dtype: string\n  splits:\n  - name: train\n    num_examples: 1182565\n    num_bytes: 321172234\n---\n\n> This dataset is shared under CC BY-NC 4.0, which means you are free to use, share, and adapt it for non-commercial research and educational purposes with attribution. You can read the full license at https://creativecommons.org/licenses/by-nc/4.0/.\n\n# Ghana-QA: Multilingual Ghanaian Question-Answer Pairs Dataset\n\n## Dataset Summary\n\n**Ghana-QA** is a large-scale multilingual question-answering dataset derived from Ghanaian news articles. The dataset covers English and three major Ghanaian languages: **Twi (Akan)**, **Ewe**, and **Ga**. \n\nThe dataset is organized into dedicated subsets (configurations) so you can easily load individual languages or the full dataset.\n\n- **Total QA Pairs**: 5,125,796\n- **Subsets / Configurations**: `english`, `twi`, `ewe`, `ga`, and `all` (default)\n- **Source**: Ghanaian news articles (Citi Newsroom, MyJoyOnline, etc.)\n- **Project**: Part of the [GhanaNLP](https://ghananlp.org) initiative\n\n## Available Subsets\n\n| Subset Name | Language | Code (`lang`) | Number of QA Pairs | Description |\n|---|---|---|---|---|\n| `english` | English | `eng` | 1,578,136 | QA pairs in English from Ghanaian news |\n| `twi` | Twi (Akan) | `twi` | 1,182,530 | Parallel QA pairs translated into Twi |\n| `ewe` | Ewe | `ewe` | 1,182,565 | Parallel QA pairs translated into Ewe |\n| `ga` | Ga | `ga` | 1,182,565 | Parallel QA pairs translated into Ga |\n| `all` *(default)* | Multilingual | — | 5,125,796 | All 4 language subsets combined |\n\n## How to Use\n\nLoad individual language subsets or the entire dataset using the Hugging Face `datasets` library:\n\n### 1. Load Specific Language Subsets\n\n```python\nfrom datasets import load_dataset\n\n# English subset\nenglish_qa = load_dataset(\"ghananlpcommunity/ghana-qa\", \"english\")\nprint(f\"English samples: {len(english_qa['train'])}\")\nprint(english_qa['train'][0])\n\n# Twi subset\ntwi_qa = load_dataset(\"ghananlpcommunity/ghana-qa\", \"twi\")\nprint(f\"Twi samples: {len(twi_qa['train'])}\")\nprint(twi_qa['train'][0])\n\n# Ewe subset\newe_qa = load_dataset(\"ghananlpcommunity/ghana-qa\", \"ewe\")\nprint(f\"Ewe samples: {len(ewe_qa['train'])}\")\nprint(ewe_qa['train'][0])\n\n# Ga subset\nga_qa = load_dataset(\"ghananlpcommunity/ghana-qa\", \"ga\")\nprint(f\"Ga samples: {len(ga_qa['train'])}\")\nprint(ga_qa['train'][0])\n```\n\n### 2. Load the Combined Dataset (Default)\n\n```python\nfrom datasets import load_dataset\n\n# Loads all languages combined\ndataset = load_dataset(\"ghananlpcommunity/ghana-qa\")\nprint(f\"Total samples: {len(dataset['train'])}\")\n```\n\n### 3. Streaming Mode (No Full Download Required)\n\n```python\nfrom datasets import load_dataset\n\n# Stream examples on the fly\ndataset = load_dataset(\"ghananlpcommunity/ghana-qa\", \"english\", streaming=True)\nfor sample in dataset['train'].take(5):\n    print(\"Q:\", sample['question'])\n    print(\"A:\", sample['answer'])\n```\n\n## Data Fields\n\nEach example contains the following fields:\n\n- `question` (*string*): The question text in the respective language.\n- `answer` (*string*): The concise, factual answer to the question in the respective language.\n- `lang` (*string*): Language identifier code (`eng`, `twi`, `ewe`, or `ga`).\n\n### Sample Data Instances\n\n#### English (`english`):\n```json\n{\n  \"question\": \"What happens if a political party member is suspended?\",\n  \"answer\": \"Suspended party members lose voting rights until they complete reinstatement procedures. Amnesty may apply, but membership forfeiture resets status.\",\n  \"lang\": \"eng\"\n}\n```\n\n#### Twi (`twi`):\n```json\n{\n  \"question\": \"Sɛ wogyae amammui kuw no muni bi a, dɛn na ɛba?\",\n  \"answer\": \"Amannɔne a wɔagyae wɔn adwuma no hwere hokwan a wɔwɔ sɛ wɔtow aba no kosi sɛ wobewie nhyehyɛe a wɔde bɛsan akɔ adwuma mu no. Amnesty betumi abisa, nanso asɔremma a wɔfa wɔn ho wɔn ho no resets tebea.\",\n  \"lang\": \"twi\"\n}\n```\n\n#### Ewe (`ewe`):\n```json\n{\n  \"question\": \"Nukae adzɔ ne wodzudzɔ dunyaheha me tɔ aɖe ƒe dɔwɔwɔ?\",\n  \"answer\": \"Akpa siwo wodzudzɔ la bu akɔdada ƒe gomenɔamesiwo vaseɖe esime wowu ɖoɖo siwo wowɔ be woagbugbɔ wo axɔ ɖe dɔa me nu. Atsɔtsɔtsɔke ate ŋu awɔ dɔ, gake hamevinyenye ƒe nusiwo woxɔ le ame si ƒe ɖoƒea gbugbɔa ɖoƒea.\",\n  \"lang\": \"ewe\"\n}\n```\n\n#### Ga (`ga`):\n```json\n{\n  \"question\": \"Mɛni baa kɛji akɛ ajie maŋkwramɔŋ kuu lɛ mlinyo ko?\",\n  \"answer\": \"Kuu lɛ mli bii ni agbeɔ naa lɛ laajeɔ hegbɛi ni akɛwoɔ oshikifɔɔ mli lɛ kɛyashi be mli ni amɛgbeɔ gbɛjianɔtoo ni akɛbaaku sɛɛ aba lɛ naa. Amnesty baanyɛ abi, shi kuu lɛ mli bii ni ajie amɛ lɛ haa shihilɛ lɛ yaa hiɛ ekoŋŋ.\",\n  \"lang\": \"ga\"\n}\n```\n\n## Dataset Creation\n\n1. **Source Articles**: Curated Ghanaian news articles covering politics, economy, health, education, sports, and culture from Ghanaian news portals.\n2. **Q&A Generation**: High-quality QA pairs generated using LLM prompts designed to produce mutually exclusive queries and concise, accurate answers grounded strictly in the news text.\n3. **Translation**: Parallel translations into Twi (Akan), Ewe, and Ga produced with high-quality translation pipelines tailored for Ghanaian languages.\n4. **Validation & Deduplication**: Rigorous validation, removal of incomplete/malformed pairs, cleaning of formatting artifacts, and deduplication.\n\n## Citation Information\n\nIf you use this dataset in your research or application, please cite:\n\n```bibtex\n@dataset{Ghana-QA_2025,\n  title = {Ghana-QA: Multilingual Ghanaian Question-Answer Pairs},\n  author = {Mich-Seth Owusu and Priscilla Lartey and Gerhardt Datsomor},\n  year = {2025},\n  publisher = {Hugging Face},\n  url = {https://huggingface.co/datasets/ghananlpcommunity/ghana-qa}\n}\n```\n\n## License\n\nThis dataset is released under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to use, share, and adapt for non-commercial research and educational purposes with attribution.\n\n## Acknowledgments\n\nSpecial thanks to the primary contributors of the Ghana-QA project: **Mich-Seth Owusu**, **Priscilla Lartey**, **Gerhardt Datsomor**, and all volunteers from the **GhanaNLP community**. This work is part of the GhanaNLP initiative to advance natural language processing for Ghanaian and African languages.\n",
+ "configs": [
+  "all",
+  "english",
+  "twi",
+  "ewe",
+  "ga"
+ ],
+ "samples": {
+  "all/train": [
+   {
+    "question": "What happens if a political party member is suspended?",
+    "answer": "Suspended party members lose voting rights until they complete reinstatement procedures. Amnesty may apply, but membership forfeiture resets status.",
+    "lang": "eng"
+   },
+   {
+    "question": "Can a former party member regain voting rights after rejoining?",
+    "answer": "No—rejoining members start as beginners, losing prior voting rights until they meet reinstatement requirements (e.g., 2-year waiting period).",
+    "lang": "eng"
+   },
+   {
+    "question": "How does a political party punish members who support rivals?",
+    "answer": "Automatic membership forfeiture occurs if members back opposing candidates. Rejoining resets status; voting rights are revoked until conditions are met.",
+    "lang": "eng"
+   },
+   {
+    "question": "What are the rules for rejoining a political party after leaving?",
+    "answer": "Rejoining members are treated as new entrants, losing past privileges like voting rights or positions until eligibility criteria are fulfilled.",
+    "lang": "eng"
+   },
+   {
+    "question": "Does a political party amnesty cover all suspended members?",
+    "answer": "No—amnesty excludes those who forfeited membership. They must reapply and complete procedures to regain rights.",
+    "lang": "eng"
+   }
+  ],
+  "english/train": [
+   {
+    "question": "What happens if a political party member is suspended?",
+    "answer": "Suspended party members lose voting rights until they complete reinstatement procedures. Amnesty may apply, but membership forfeiture resets status.",
+    "lang": "eng"
+   },
+   {
+    "question": "Can a former party member regain voting rights after rejoining?",
+    "answer": "No—rejoining members start as beginners, losing prior voting rights until they meet reinstatement requirements (e.g., 2-year waiting period).",
+    "lang": "eng"
+   },
+   {
+    "question": "How does a political party punish members who support rivals?",
+    "answer": "Automatic membership forfeiture occurs if members back opposing candidates. Rejoining resets status; voting rights are revoked until conditions are met.",
+    "lang": "eng"
+   },
+   {
+    "question": "What are the rules for rejoining a political party after leaving?",
+    "answer": "Rejoining members are treated as new entrants, losing past privileges like voting rights or positions until eligibility criteria are fulfilled.",
+    "lang": "eng"
+   },
+   {
+    "question": "Does a political party amnesty cover all suspended members?",
+    "answer": "No—amnesty excludes those who forfeited membership. They must reapply and complete procedures to regain rights.",
+    "lang": "eng"
+   }
+  ],
+  "twi/train": [
+   {
+    "question": "So anyinam ahoɔden ho ka betumi aka ahoɔden a wɔde ma wɔ anyinam ahoɔden ho?",
+    "answer": "Yiw, tow a wɔbɔ no boa utilities sika adwumayɛ. Sɛ ɛba fam dodo a, ebia nnwumakuw no rennya sika a wɔde bɛhyew pɛtro, na ɛde wɔn ho to asiane mu sɛ wɔbɛma anyinam ahoɔden agyae. Nsakrae a wɔyɛ no betumi asiw ɔsom mu ɔhaw ahorow ano.",
+    "lang": "twi"
+   },
+   {
+    "question": "Nsrahwɛ a nkurɔfo kyere nkurɔfo sie no abu so dɛn wɔ Ghana nnansa yi?",
+    "answer": "Nnipa a wɔkyere wɔn sie wɔ Ghana no ahu nsɛm a ɛfa nnansa yi ho, a nea ɛka ho ne aguadifo bi a wogyee no wɔ Kumasi ne nhwehwɛmu a ɛkɔɔ so wɔ mmeawa a wɔayera wɔ Takoradi mu ho.",
+    "lang": "twi"
+   },
+   {
+    "question": "Ɔkwan bɛn so na kwae a wɔsan yɛ no boa ma sikasɛm nya nkɔso wɔ Ghana?",
+    "answer": "Ghana’s Green Ghana adwuma no de kwaeɛ a wɔbɛsan ayɛ no bata adwumayɛ, sikasɛm mu hokwan, ne nneɛma a atwa yɛn ho ahyia a ɛbɛtena hɔ daa ho.",
+    "lang": "twi"
+   },
+   {
+    "question": "Nyamesom akuw bɛn na ɛma ɔmanfo yɛ awerɛkyekyesɛm wɔ Ghana?",
+    "answer": "Kristofo akuw te sɛ Onyankopɔn Nhyiam ahorow a ɛwɔ Ghana no taa kɔsra mmusua a wɔn ho yɛ awerɛhow kɔbɔ mpae na wɔboa wɔn bere a wɔredi awerɛhow no.",
+    "lang": "twi"
+   },
+   {
+    "question": "Bere bɛn na Citi FM wimhyɛn amammuisɛm ho nkɔmmɔbɔ kyerɛ?",
+    "answer": "Wɔn a wɔtow aba no da biara da nsɛm a ɛfa Citi FM ho no kɔ so dapɛn nna fi 1-2 PM, na ɛde animdefo amammui mu nhwehwɛmu ma ansa na Ghana abatoɔ no aba.",
+    "lang": "twi"
+   }
+  ],
+  "ewe/train": [
+   {
+    "question": "Aleke Ghana wɔa amidzraƒewo ƒe sewo dzi?",
+    "answer": "NPA léa ŋku ɖe xɔtuɖoɖowo ƒe sewo kple fewo dzi wɔwɔ ŋu, woxɔa mɔɖegbalẽwo le sedzidadawo ta, abe alesi wokpɔe le afɔɖeɖe siwo wowɔ nyitsɔ laa ɖe 13 OMCs ŋu me ene.",
+    "lang": "ewe"
+   },
+   {
+    "question": "Aleke yunivɛsiti siwo le Ghana kpɔa alakpanya siwo wotsɔ ɖe nufialawo ŋu gbɔe?",
+    "answer": "Ghana yunivɛsitiwo, abe SU ene, kua nu me tsitotsito. Ne menye alakpa o la, ke wobia be woagbugbɔ nyaa aɖo te ahaɖe kuku be woatsɔ akpɔ ŋkɔ nyui si le wo ŋu ta.",
+    "lang": "ewe"
+   },
+   {
+    "question": "Aleke fiber cuts kpɔa ŋusẽ ɖe asitelefon dzi network ƒe nyonyome dzi le Ghana?",
+    "answer": "Fiber ƒe ɖeɖe naa Internet nɔa blewu, kaƒoƒo siwo dzi ɖe kpɔtɔ, kple subɔsubɔdɔa ƒe nutsotsowo. Ghana Telefonkadodowo ƒe Dɔwɔƒe le dɔ wɔm be yeaɖe tɔtɔ siawo dzi akpɔtɔ.",
+    "lang": "ewe"
+   },
+   {
+    "question": "Nukatae nye nutoa yi edzi le ŋusẽ dzi ɖem kpɔtɔ le Ghana?",
+    "answer": "Elektrikdɔwɔla siwo ŋu womeɖe mɔ ɖo o siwo trɔ asi le ECG ƒe xɔtuɖoɖowo ŋu, si agblẽ nu le wo ŋu eye wògblẽ nu le wo ŋu la gbɔe elektrikŋusẽ dzi ɖeɖe kpɔtɔ enuenu le Ghana ate ŋu atso.",
+    "lang": "ewe"
+   },
+   {
+    "question": "Akpa kae Ghana ƒe Ganyawo ƒe Dɔdzikpɔla wɔna le nubabla ƒe fexexe me?",
+    "answer": "Ghana ƒe Ganyawo Gbɔkpɔla tɔ te fexexe ɖe nubabla siwo ŋu ɖikeke le dzi, eye wòbia be woana numekɔkɔwo be woatsɔ axe mɔ ɖe ganyawo ƒe gbegblẽ nu.",
+    "lang": "ewe"
+   }
+  ]
+ }
+}

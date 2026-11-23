@@ -1,0 +1,4107 @@
+{
+ "repo": "openlanguagedata/flores_plus",
+ "gated": "auto",
+ "card_data": {
+  "annotations_creators": [
+   "found"
+  ],
+  "language_creators": [
+   "expert-generated"
+  ],
+  "language": [
+   "ace",
+   "acm",
+   "acq",
+   "aeb",
+   "af",
+   "ajp",
+   "ak",
+   "als",
+   "am",
+   "apc",
+   "apd",
+   "ar",
+   "ars",
+   "ary",
+   "arz",
+   "as",
+   "ast",
+   "awa",
+   "ayr",
+   "azb",
+   "azj",
+   "ba",
+   "bm",
+   "ban",
+   "be",
+   "bem",
+   "bn",
+   "bho",
+   "bjn",
+   "bo",
+   "bs",
+   "bug",
+   "bg",
+   "ca",
+   "ccp",
+   "ceb",
+   "cs",
+   "cjk",
+   "ckb",
+   "crh",
+   "cy",
+   "da",
+   "de",
+   "dar",
+   "dik",
+   "dyu",
+   "dz",
+   "el",
+   "en",
+   "eo",
+   "et",
+   "eu",
+   "ee",
+   "fo",
+   "fj",
+   "fi",
+   "fon",
+   "fr",
+   "frp",
+   "fur",
+   "fuv",
+   "gaz",
+   "gd",
+   "ga",
+   "gl",
+   "gn",
+   "gu",
+   "ht",
+   "ha",
+   "he",
+   "hi",
+   "hne",
+   "hr",
+   "hu",
+   "hy",
+   "ig",
+   "ilo",
+   "id",
+   "is",
+   "it",
+   "jv",
+   "ja",
+   "kab",
+   "kac",
+   "kam",
+   "kn",
+   "ks",
+   "ka",
+   "kk",
+   "kbp",
+   "kea",
+   "khk",
+   "km",
+   "ki",
+   "rw",
+   "kjh",
+   "ky",
+   "kmb",
+   "kmr",
+   "knc",
+   "kg",
+   "ko",
+   "lo",
+   "lij",
+   "li",
+   "lld",
+   "ln",
+   "lt",
+   "lmo",
+   "ltg",
+   "lb",
+   "lua",
+   "lg",
+   "luo",
+   "lus",
+   "lvs",
+   "mag",
+   "mai",
+   "ml",
+   "mar",
+   "mfe",
+   "mhr",
+   "min",
+   "mk",
+   "mt",
+   "mni",
+   "mos",
+   "mi",
+   "my",
+   "nl",
+   "nn",
+   "nb",
+   "npi",
+   "nso",
+   "nus",
+   "ny",
+   "oc",
+   "ory",
+   "pag",
+   "pa",
+   "pap",
+   "pbt",
+   "pes",
+   "plt",
+   "pl",
+   "pt",
+   "prs",
+   "quy",
+   "ro",
+   "rn",
+   "ru",
+   "sg",
+   "sa",
+   "sat",
+   "scn",
+   "seh",
+   "shn",
+   "si",
+   "sk",
+   "sl",
+   "sm",
+   "sn",
+   "sd",
+   "so",
+   "st",
+   "es",
+   "sc",
+   "sr",
+   "ss",
+   "su",
+   "sv",
+   "swh",
+   "szl",
+   "ta",
+   "taq",
+   "tt",
+   "te",
+   "tg",
+   "tl",
+   "th",
+   "ti",
+   "tig",
+   "tpi",
+   "tn",
+   "ts",
+   "tk",
+   "tum",
+   "tr",
+   "tw",
+   "tzm",
+   "udm",
+   "ug",
+   "uk",
+   "umb",
+   "ur",
+   "uzn",
+   "uzs",
+   "vec",
+   "vi",
+   "war",
+   "wo",
+   "xh",
+   "ydd",
+   "yo",
+   "yue",
+   "zgh",
+   "zh",
+   "zsm",
+   "zu"
+  ],
+  "license": [
+   "cc-by-sa-4.0"
+  ],
+  "multilinguality": [
+   "multilingual",
+   "translation"
+  ],
+  "size_categories": [
+   "unknown"
+  ],
+  "source_datasets": [
+   "extended|flores"
+  ],
+  "task_categories": [
+   "text-generation",
+   "translation"
+  ],
+  "task_ids": [],
+  "pretty_name": "flores+",
+  "language_details": "ace_Arab, ace_Latn, acm_Arab, acq_Arab, aeb_Arab, afr_Latn, ajp_Arab, aka_Latn, amh_Ethi, apc_Arab, apd_Arab, arb_Arab, ars_Arab, ary_Arab, arz_Arab, asm_Beng, ast_Latn, awa_Deva, ayr_Latn, azb_Arab, azj_Latn, bak_Cyrl, bam_Latn, ban_Latn, bel_Cyrl, bem_Latn, ben_Beng, bho_Deva, bjn_Arab, bjn_Latn, bod_Tibt, bos_Latn, bug_Latn, bul_Cyrl, cat_Latn, ccp_Cakm, ceb_Latn, ces_Latn, cjk_Latn, ckb_Arab, crh_Latn, cym_Latn, dan_Latn, deu_Latn, dar_Cyrl, dik_Latn, dyu_Latn, dzo_Tibt, ell_Grek, eng_Latn, epo_Latn, est_Latn, eus_Latn, ewe_Latn, fao_Latn, pes_Arab, fij_Latn, fin_Latn, fon_Latn, fra_Latn, frp_Latn, fur_Latn, fuv_Latn, gla_Latn, gle_Latn, glg_Latn, grn_Latn, guj_Gujr, hat_Latn, hau_Latn, heb_Hebr, hin_Deva, hne_Deva, hrv_Latn, hun_Latn, hye_Armn, ibo_Latn, ilo_Latn, ind_Latn, isl_Latn, ita_Latn, jav_Latn, jpn_Jpan, kab_Latn, kac_Latn, kam_Latn, kan_Knda, kas_Arab, kas_Deva, kat_Geor, knc_Arab, knc_Latn, kaz_Cyrl, kbp_Latn, kea_Latn, khm_Khmr, kik_Latn, kin_Latn, kir_Cyrl, kjh_Cyrl, kmb_Latn, kon_Latn, kor_Hang, kmr_Latn, lao_Laoo, lvs_Latn, lij_Latn, lim_Latn, lin_Latn, lit_Latn, lld_Latn, lmo_Latn, ltg_Latn, ltz_Latn, lua_Latn, lug_Latn, luo_Latn, lus_Latn, mag_Deva, mai_Deva, mal_Mlym, mar_Deva, mfe_Latn, mhr_Cyrl, min_Latn, mkd_Cyrl, plt_Latn, mlt_Latn, mni_Beng, mni_Mtei, khk_Cyrl, khk_Mong, mos_Latn, mri_Latn, zsm_Latn, mya_Mymr, nld_Latn, nno_Latn, nob_Latn, npi_Deva, nso_Latn, nus_Latn, nya_Latn, oci_Latn, gaz_Latn, ory_Orya, pag_Latn, pan_Guru, pap_Latn, pol_Latn, por_Latn, prs_Arab, pbt_Arab, quy_Latn, ron_Latn, run_Latn, rus_Cyrl, sag_Latn, san_Deva, sat_Beng, scn_Latn, seh_Latn, shn_Mymr, sin_Sinh, slk_Latn, slv_Latn, smo_Latn, sna_Latn, snd_Arab, som_Latn, sot_Latn, spa_Latn, als_Latn, srd_Latn, srp_Cyrl, ssw_Latn, sun_Latn, swe_Latn, swh_Latn, szl_Latn, tam_Taml, tat_Cyrl, tel_Telu, tgk_Cyrl, tgl_Latn, tha_Thai, tig_Ethi, tir_Ethi, taq_Latn, taq_Tfng, tpi_Latn, tsn_Latn, tso_Latn, tuk_Latn, tum_Latn, tur_Latn, twi_Latn, tzm_Tfng, udm_Cyrl, uig_Arab, ukr_Cyrl, umb_Latn, urd_Arab, uzn_Latn, uzs_Arab, vec_Latn, vie_Latn, war_Latn, wol_Latn, xho_Latn, ydd_Hebr, yor_Latn, yue_Hant, zgh_Tfng, zho_Hans, zho_Hant, zul_Latn",
+  "tags": [
+   "text"
+  ],
+  "configs": [
+   {
+    "config_name": "default",
+    "data_files": [
+     {
+      "split": "dev",
+      "path": "dev/*.jsonl"
+     },
+     {
+      "split": "devtest",
+      "path": "devtest/*.jsonl"
+     }
+    ]
+   },
+   {
+    "config_name": "ace_Arab",
+    "data_files": [
+     {
+      "path": "dev/ace_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ace_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ace_Latn",
+    "data_files": [
+     {
+      "path": "dev/ace_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ace_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "acm_Arab",
+    "data_files": [
+     {
+      "path": "dev/acm_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/acm_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "acq_Arab",
+    "data_files": [
+     {
+      "path": "dev/acq_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/acq_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "aeb_Arab",
+    "data_files": [
+     {
+      "path": "dev/aeb_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/aeb_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "afr_Latn",
+    "data_files": [
+     {
+      "path": "dev/afr_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/afr_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "als_Latn",
+    "data_files": [
+     {
+      "path": "dev/als_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/als_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "amh_Ethi",
+    "data_files": [
+     {
+      "path": "dev/amh_Ethi.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/amh_Ethi.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "apc_Arab_nort3139",
+    "data_files": [
+     {
+      "path": "dev/apc_Arab_nort3139.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/apc_Arab_nort3139.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "apc_Arab_sout3123",
+    "data_files": [
+     {
+      "path": "dev/apc_Arab_sout3123.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/apc_Arab_sout3123.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "apd_Arab",
+    "data_files": [
+     {
+      "path": "dev/apd_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/apd_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "arb_Arab",
+    "data_files": [
+     {
+      "path": "dev/arb_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/arb_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "arb_Latn",
+    "data_files": [
+     {
+      "path": "dev/arb_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/arb_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "arg_Latn",
+    "data_files": [
+     {
+      "path": "dev/arg_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/arg_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ars_Arab",
+    "data_files": [
+     {
+      "path": "dev/ars_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ars_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ary_Arab",
+    "data_files": [
+     {
+      "path": "dev/ary_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ary_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "arz_Arab",
+    "data_files": [
+     {
+      "path": "dev/arz_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/arz_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "asm_Beng",
+    "data_files": [
+     {
+      "path": "dev/asm_Beng.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/asm_Beng.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ast_Latn",
+    "data_files": [
+     {
+      "path": "dev/ast_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ast_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "awa_Deva",
+    "data_files": [
+     {
+      "path": "dev/awa_Deva.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/awa_Deva.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ayr_Latn",
+    "data_files": [
+     {
+      "path": "dev/ayr_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ayr_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "azb_Arab",
+    "data_files": [
+     {
+      "path": "dev/azb_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/azb_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "azj_Latn",
+    "data_files": [
+     {
+      "path": "dev/azj_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/azj_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "bak_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/bak_Cyrl.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/bak_Cyrl.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "bam_Latn",
+    "data_files": [
+     {
+      "path": "dev/bam_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/bam_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ban_Latn",
+    "data_files": [
+     {
+      "path": "dev/ban_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ban_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "bel_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/bel_Cyrl.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/bel_Cyrl.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "bem_Latn",
+    "data_files": [
+     {
+      "path": "dev/bem_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/bem_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ben_Beng",
+    "data_files": [
+     {
+      "path": "dev/ben_Beng.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ben_Beng.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "bho_Deva",
+    "data_files": [
+     {
+      "path": "dev/bho_Deva.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/bho_Deva.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "bjn_Arab",
+    "data_files": [
+     {
+      "path": "dev/bjn_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/bjn_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "bjn_Latn",
+    "data_files": [
+     {
+      "path": "dev/bjn_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/bjn_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "bod_Tibt",
+    "data_files": [
+     {
+      "path": "dev/bod_Tibt.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/bod_Tibt.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "bos_Latn",
+    "data_files": [
+     {
+      "path": "dev/bos_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/bos_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "brx_Deva",
+    "data_files": [
+     {
+      "path": "dev/brx_Deva.jsonl",
+      "split": "dev"
+     }
+    ]
+   },
+   {
+    "config_name": "bug_Latn",
+    "data_files": [
+     {
+      "path": "dev/bug_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/bug_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "bul_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/bul_Cyrl.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/bul_Cyrl.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "cat_Latn",
+    "data_files": [
+     {
+      "path": "dev/cat_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/cat_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "cat_Latn_vale1252",
+    "data_files": [
+     {
+      "path": "devtest/cat_Latn_vale1252.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ccp_Cakm",
+    "data_files": [
+     {
+      "path": "dev/ccp_Cakm.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ccp_Cakm.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ceb_Latn",
+    "data_files": [
+     {
+      "path": "dev/ceb_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ceb_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ces_Latn",
+    "data_files": [
+     {
+      "path": "dev/ces_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ces_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "chv_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/chv_Cyrl.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/chv_Cyrl.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "cjk_Latn",
+    "data_files": [
+     {
+      "path": "dev/cjk_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/cjk_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ckb_Arab",
+    "data_files": [
+     {
+      "path": "dev/ckb_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ckb_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "cmn_Hans",
+    "data_files": [
+     {
+      "path": "dev/cmn_Hans.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/cmn_Hans.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "cmn_Hant",
+    "data_files": [
+     {
+      "path": "dev/cmn_Hant.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/cmn_Hant.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "crh_Latn",
+    "data_files": [
+     {
+      "path": "dev/crh_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/crh_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "cym_Latn",
+    "data_files": [
+     {
+      "path": "dev/cym_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/cym_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "dan_Latn",
+    "data_files": [
+     {
+      "path": "dev/dan_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/dan_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "dar_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/dar_Cyrl.jsonl",
+      "split": "dev"
+     }
+    ]
+   },
+   {
+    "config_name": "deu_Latn",
+    "data_files": [
+     {
+      "path": "dev/deu_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/deu_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "dgo_Deva",
+    "data_files": [
+     {
+      "path": "dev/dgo_Deva.jsonl",
+      "split": "dev"
+     }
+    ]
+   },
+   {
+    "config_name": "dik_Latn",
+    "data_files": [
+     {
+      "path": "dev/dik_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/dik_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "dyu_Latn",
+    "data_files": [
+     {
+      "path": "dev/dyu_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/dyu_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "dzo_Tibt",
+    "data_files": [
+     {
+      "path": "dev/dzo_Tibt.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/dzo_Tibt.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ekk_Latn",
+    "data_files": [
+     {
+      "path": "dev/ekk_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ekk_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ell_Grek",
+    "data_files": [
+     {
+      "path": "dev/ell_Grek.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ell_Grek.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "eng_Latn",
+    "data_files": [
+     {
+      "path": "dev/eng_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/eng_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "epo_Latn",
+    "data_files": [
+     {
+      "path": "dev/epo_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/epo_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "eus_Latn",
+    "data_files": [
+     {
+      "path": "dev/eus_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/eus_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ewe_Latn",
+    "data_files": [
+     {
+      "path": "dev/ewe_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ewe_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "fao_Latn",
+    "data_files": [
+     {
+      "path": "dev/fao_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/fao_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "fij_Latn",
+    "data_files": [
+     {
+      "path": "dev/fij_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/fij_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "fil_Latn",
+    "data_files": [
+     {
+      "path": "dev/fil_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/fil_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "fin_Latn",
+    "data_files": [
+     {
+      "path": "dev/fin_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/fin_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "fon_Latn",
+    "data_files": [
+     {
+      "path": "dev/fon_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/fon_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "fra_Latn",
+    "data_files": [
+     {
+      "path": "dev/fra_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/fra_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "frp_Latn_savo1253",
+    "data_files": [
+     {
+      "path": "dev/frp_Latn_savo1253.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/frp_Latn_savo1253.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "fur_Latn",
+    "data_files": [
+     {
+      "path": "dev/fur_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/fur_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "fuv_Latn",
+    "data_files": [
+     {
+      "path": "dev/fuv_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/fuv_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "gaz_Latn",
+    "data_files": [
+     {
+      "path": "dev/gaz_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/gaz_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "gla_Latn",
+    "data_files": [
+     {
+      "path": "dev/gla_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/gla_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "gle_Latn",
+    "data_files": [
+     {
+      "path": "dev/gle_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/gle_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "glg_Latn",
+    "data_files": [
+     {
+      "path": "dev/glg_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/glg_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "gom_Deva",
+    "data_files": [
+     {
+      "path": "dev/gom_Deva.jsonl",
+      "split": "dev"
+     }
+    ]
+   },
+   {
+    "config_name": "gug_Latn",
+    "data_files": [
+     {
+      "path": "dev/gug_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/gug_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "guj_Gujr",
+    "data_files": [
+     {
+      "path": "dev/guj_Gujr.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/guj_Gujr.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "hat_Latn",
+    "data_files": [
+     {
+      "path": "dev/hat_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/hat_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "hau_Latn",
+    "data_files": [
+     {
+      "path": "dev/hau_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/hau_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "heb_Hebr",
+    "data_files": [
+     {
+      "path": "dev/heb_Hebr.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/heb_Hebr.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "hin_Deva",
+    "data_files": [
+     {
+      "path": "dev/hin_Deva.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/hin_Deva.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "hne_Deva",
+    "data_files": [
+     {
+      "path": "dev/hne_Deva.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/hne_Deva.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "hrv_Latn",
+    "data_files": [
+     {
+      "path": "dev/hrv_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/hrv_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "hun_Latn",
+    "data_files": [
+     {
+      "path": "dev/hun_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/hun_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "hye_Armn",
+    "data_files": [
+     {
+      "path": "dev/hye_Armn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/hye_Armn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ibo_Latn",
+    "data_files": [
+     {
+      "path": "dev/ibo_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ibo_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ilo_Latn",
+    "data_files": [
+     {
+      "path": "dev/ilo_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ilo_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ind_Latn",
+    "data_files": [
+     {
+      "path": "dev/ind_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ind_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "isl_Latn",
+    "data_files": [
+     {
+      "path": "dev/isl_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/isl_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ita_Latn",
+    "data_files": [
+     {
+      "path": "dev/ita_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ita_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "jav_Latn",
+    "data_files": [
+     {
+      "path": "dev/jav_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/jav_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "jpn_Jpan",
+    "data_files": [
+     {
+      "path": "dev/jpn_Jpan.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/jpn_Jpan.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "kaa_Latn",
+    "data_files": [
+     {
+      "path": "devtest/kaa_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "kab_Latn",
+    "data_files": [
+     {
+      "path": "dev/kab_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/kab_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "kac_Latn",
+    "data_files": [
+     {
+      "path": "dev/kac_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/kac_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "kam_Latn",
+    "data_files": [
+     {
+      "path": "dev/kam_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/kam_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "kan_Knda",
+    "data_files": [
+     {
+      "path": "dev/kan_Knda.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/kan_Knda.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "kas_Arab",
+    "data_files": [
+     {
+      "path": "dev/kas_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/kas_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "kas_Deva",
+    "data_files": [
+     {
+      "path": "dev/kas_Deva.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/kas_Deva.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "kat_Geor",
+    "data_files": [
+     {
+      "path": "dev/kat_Geor.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/kat_Geor.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "kaz_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/kaz_Cyrl.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/kaz_Cyrl.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "kbp_Latn",
+    "data_files": [
+     {
+      "path": "dev/kbp_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/kbp_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "kea_Latn",
+    "data_files": [
+     {
+      "path": "dev/kea_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/kea_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "khk_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/khk_Cyrl.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/khk_Cyrl.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "khk_Mong",
+    "data_files": [
+     {
+      "path": "devtest/khk_Mong.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "khm_Khmr",
+    "data_files": [
+     {
+      "path": "dev/khm_Khmr.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/khm_Khmr.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "kik_Latn",
+    "data_files": [
+     {
+      "path": "dev/kik_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/kik_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "kin_Latn",
+    "data_files": [
+     {
+      "path": "dev/kin_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/kin_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "kir_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/kir_Cyrl.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/kir_Cyrl.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "kjh_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/kjh_Cyrl.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/kjh_Cyrl.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "kmb_Latn",
+    "data_files": [
+     {
+      "path": "dev/kmb_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/kmb_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "kmr_Latn",
+    "data_files": [
+     {
+      "path": "dev/kmr_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/kmr_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "knc_Arab",
+    "data_files": [
+     {
+      "path": "dev/knc_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/knc_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "knc_Latn",
+    "data_files": [
+     {
+      "path": "dev/knc_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/knc_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "kor_Hang",
+    "data_files": [
+     {
+      "path": "dev/kor_Hang.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/kor_Hang.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ktu_Latn",
+    "data_files": [
+     {
+      "path": "dev/ktu_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ktu_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "lao_Laoo",
+    "data_files": [
+     {
+      "path": "dev/lao_Laoo.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/lao_Laoo.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "lij_Latn",
+    "data_files": [
+     {
+      "path": "dev/lij_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/lij_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "lim_Latn",
+    "data_files": [
+     {
+      "path": "dev/lim_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/lim_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "lin_Latn",
+    "data_files": [
+     {
+      "path": "dev/lin_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/lin_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "lit_Latn",
+    "data_files": [
+     {
+      "path": "dev/lit_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/lit_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "lld_Latn",
+    "data_files": [
+     {
+      "path": "dev/lld_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/lld_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "lld_Latn_gard1241",
+    "data_files": [
+     {
+      "path": "dev/lld_Latn_gard1241.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/lld_Latn_gard1241.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "lmo_Latn",
+    "data_files": [
+     {
+      "path": "dev/lmo_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/lmo_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "lmo_Latn_east2276",
+    "data_files": [
+     {
+      "path": "dev/lmo_Latn_east2276.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/lmo_Latn_east2276.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ltg_Latn",
+    "data_files": [
+     {
+      "path": "dev/ltg_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ltg_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ltz_Latn",
+    "data_files": [
+     {
+      "path": "dev/ltz_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ltz_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "lua_Latn",
+    "data_files": [
+     {
+      "path": "dev/lua_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/lua_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "lug_Latn",
+    "data_files": [
+     {
+      "path": "dev/lug_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/lug_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "luo_Latn",
+    "data_files": [
+     {
+      "path": "dev/luo_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/luo_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "lus_Latn",
+    "data_files": [
+     {
+      "path": "dev/lus_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/lus_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "lvs_Latn",
+    "data_files": [
+     {
+      "path": "dev/lvs_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/lvs_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "mag_Deva",
+    "data_files": [
+     {
+      "path": "dev/mag_Deva.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/mag_Deva.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "mai_Deva",
+    "data_files": [
+     {
+      "path": "dev/mai_Deva.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/mai_Deva.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "mal_Mlym",
+    "data_files": [
+     {
+      "path": "dev/mal_Mlym.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/mal_Mlym.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "mar_Deva",
+    "data_files": [
+     {
+      "path": "dev/mar_Deva.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/mar_Deva.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "mfe_Latn",
+    "data_files": [
+     {
+      "path": "dev/mfe_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/mfe_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "mhr_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/mhr_Cyrl.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/mhr_Cyrl.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "min_Arab",
+    "data_files": [
+     {
+      "path": "dev/min_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/min_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "min_Latn",
+    "data_files": [
+     {
+      "path": "dev/min_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/min_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "mkd_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/mkd_Cyrl.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/mkd_Cyrl.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "mlt_Latn",
+    "data_files": [
+     {
+      "path": "dev/mlt_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/mlt_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "mni_Beng",
+    "data_files": [
+     {
+      "path": "dev/mni_Beng.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/mni_Beng.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "mni_Mtei",
+    "data_files": [
+     {
+      "path": "dev/mni_Mtei.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/mni_Mtei.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "mos_Latn",
+    "data_files": [
+     {
+      "path": "dev/mos_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/mos_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "mri_Latn",
+    "data_files": [
+     {
+      "path": "dev/mri_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/mri_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "mya_Mymr",
+    "data_files": [
+     {
+      "path": "dev/mya_Mymr.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/mya_Mymr.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "myv_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/myv_Cyrl.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/myv_Cyrl.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "nld_Latn",
+    "data_files": [
+     {
+      "path": "dev/nld_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/nld_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "nno_Latn",
+    "data_files": [
+     {
+      "path": "dev/nno_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/nno_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "nob_Latn",
+    "data_files": [
+     {
+      "path": "dev/nob_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/nob_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "nob_Latn_radical",
+    "data_files": [
+     {
+      "path": "dev/nob_Latn_radical.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/nob_Latn_radical.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "npi_Deva",
+    "data_files": [
+     {
+      "path": "dev/npi_Deva.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/npi_Deva.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "nqo_Nkoo",
+    "data_files": [
+     {
+      "path": "dev/nqo_Nkoo.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/nqo_Nkoo.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "nso_Latn",
+    "data_files": [
+     {
+      "path": "dev/nso_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/nso_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "nus_Latn",
+    "data_files": [
+     {
+      "path": "dev/nus_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/nus_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "nya_Latn",
+    "data_files": [
+     {
+      "path": "dev/nya_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/nya_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "nya_Latn_MZ",
+    "data_files": [
+     {
+      "path": "dev/nya_Latn_MZ.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/nya_Latn_MZ.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "oci_Latn",
+    "data_files": [
+     {
+      "path": "dev/oci_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/oci_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "oci_Latn_aran1260",
+    "data_files": [
+     {
+      "path": "dev/oci_Latn_aran1260.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/oci_Latn_aran1260.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ory_Orya",
+    "data_files": [
+     {
+      "path": "dev/ory_Orya.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ory_Orya.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "pag_Latn",
+    "data_files": [
+     {
+      "path": "dev/pag_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/pag_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "pan_Guru",
+    "data_files": [
+     {
+      "path": "dev/pan_Guru.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/pan_Guru.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "pap_Latn",
+    "data_files": [
+     {
+      "path": "dev/pap_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/pap_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "pbt_Arab",
+    "data_files": [
+     {
+      "path": "dev/pbt_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/pbt_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "pes_Arab",
+    "data_files": [
+     {
+      "path": "dev/pes_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/pes_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "plt_Latn",
+    "data_files": [
+     {
+      "path": "dev/plt_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/plt_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "pol_Latn",
+    "data_files": [
+     {
+      "path": "dev/pol_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/pol_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "por_Latn",
+    "data_files": [
+     {
+      "path": "dev/por_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/por_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "prs_Arab",
+    "data_files": [
+     {
+      "path": "dev/prs_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/prs_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "quy_Latn",
+    "data_files": [
+     {
+      "path": "dev/quy_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/quy_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ron_Latn",
+    "data_files": [
+     {
+      "path": "dev/ron_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ron_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "run_Latn",
+    "data_files": [
+     {
+      "path": "dev/run_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/run_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "rus_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/rus_Cyrl.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/rus_Cyrl.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "sag_Latn",
+    "data_files": [
+     {
+      "path": "dev/sag_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/sag_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "san_Deva",
+    "data_files": [
+     {
+      "path": "dev/san_Deva.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/san_Deva.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "sat_Olck",
+    "data_files": [
+     {
+      "path": "dev/sat_Olck.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/sat_Olck.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "scn_Latn",
+    "data_files": [
+     {
+      "path": "dev/scn_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/scn_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "seh_Latn_MZ",
+    "data_files": [
+     {
+      "path": "dev/seh_Latn_MZ.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/seh_Latn_MZ.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "shn_Mymr",
+    "data_files": [
+     {
+      "path": "dev/shn_Mymr.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/shn_Mymr.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "sin_Sinh",
+    "data_files": [
+     {
+      "path": "dev/sin_Sinh.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/sin_Sinh.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "slk_Latn",
+    "data_files": [
+     {
+      "path": "dev/slk_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/slk_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "slv_Latn",
+    "data_files": [
+     {
+      "path": "dev/slv_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/slv_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "smo_Latn",
+    "data_files": [
+     {
+      "path": "dev/smo_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/smo_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "sna_Latn",
+    "data_files": [
+     {
+      "path": "dev/sna_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/sna_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "snd_Arab",
+    "data_files": [
+     {
+      "path": "dev/snd_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/snd_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "snd_Deva",
+    "data_files": [
+     {
+      "path": "dev/snd_Deva.jsonl",
+      "split": "dev"
+     }
+    ]
+   },
+   {
+    "config_name": "som_Latn",
+    "data_files": [
+     {
+      "path": "dev/som_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/som_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "sot_Latn",
+    "data_files": [
+     {
+      "path": "dev/sot_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/sot_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "spa_Latn",
+    "data_files": [
+     {
+      "path": "dev/spa_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/spa_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "srd_Latn",
+    "data_files": [
+     {
+      "path": "dev/srd_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/srd_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "srp_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/srp_Cyrl.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/srp_Cyrl.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ssw_Latn",
+    "data_files": [
+     {
+      "path": "dev/ssw_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ssw_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "sun_Latn",
+    "data_files": [
+     {
+      "path": "dev/sun_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/sun_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "swe_Latn",
+    "data_files": [
+     {
+      "path": "dev/swe_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/swe_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "swh_Latn",
+    "data_files": [
+     {
+      "path": "dev/swh_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/swh_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "szl_Latn",
+    "data_files": [
+     {
+      "path": "dev/szl_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/szl_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "tam_Taml",
+    "data_files": [
+     {
+      "path": "dev/tam_Taml.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/tam_Taml.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "taq_Latn",
+    "data_files": [
+     {
+      "path": "dev/taq_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/taq_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "taq_Tfng",
+    "data_files": [
+     {
+      "path": "dev/taq_Tfng.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/taq_Tfng.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "tat_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/tat_Cyrl.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/tat_Cyrl.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "tel_Telu",
+    "data_files": [
+     {
+      "path": "dev/tel_Telu.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/tel_Telu.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "tgk_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/tgk_Cyrl.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/tgk_Cyrl.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "tha_Thai",
+    "data_files": [
+     {
+      "path": "dev/tha_Thai.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/tha_Thai.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "tig_Ethi",
+    "data_files": [
+     {
+      "path": "dev/tig_Ethi.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/tig_Ethi.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "tir_Ethi",
+    "data_files": [
+     {
+      "path": "dev/tir_Ethi.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/tir_Ethi.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "tpi_Latn",
+    "data_files": [
+     {
+      "path": "dev/tpi_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/tpi_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "tsn_Latn",
+    "data_files": [
+     {
+      "path": "dev/tsn_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/tsn_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "tso_Latn",
+    "data_files": [
+     {
+      "path": "dev/tso_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/tso_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "tso_Latn_MZ",
+    "data_files": [
+     {
+      "path": "dev/tso_Latn_MZ.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/tso_Latn_MZ.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "tuk_Latn",
+    "data_files": [
+     {
+      "path": "dev/tuk_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/tuk_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "tum_Latn",
+    "data_files": [
+     {
+      "path": "dev/tum_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/tum_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "tur_Latn",
+    "data_files": [
+     {
+      "path": "dev/tur_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/tur_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "twi_Latn_akua1239",
+    "data_files": [
+     {
+      "path": "dev/twi_Latn_akua1239.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/twi_Latn_akua1239.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "twi_Latn_asan1239",
+    "data_files": [
+     {
+      "path": "dev/twi_Latn_asan1239.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/twi_Latn_asan1239.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "tyv_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/tyv_Cyrl.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/tyv_Cyrl.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "udm_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/udm_Cyrl.jsonl",
+      "split": "dev"
+     }
+    ]
+   },
+   {
+    "config_name": "uig_Arab",
+    "data_files": [
+     {
+      "path": "dev/uig_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/uig_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ukr_Cyrl",
+    "data_files": [
+     {
+      "path": "dev/ukr_Cyrl.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ukr_Cyrl.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "umb_Latn",
+    "data_files": [
+     {
+      "path": "dev/umb_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/umb_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "urd_Arab",
+    "data_files": [
+     {
+      "path": "dev/urd_Arab.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/urd_Arab.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "uzn_Latn",
+    "data_files": [
+     {
+      "path": "dev/uzn_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/uzn_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "uzs_Arab",
+    "data_files": [
+     {
+      "path": "dev/uzs_Arab.jsonl",
+      "split": "dev"
+     }
+    ]
+   },
+   {
+    "config_name": "vec_Latn",
+    "data_files": [
+     {
+      "path": "dev/vec_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/vec_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "vie_Latn",
+    "data_files": [
+     {
+      "path": "dev/vie_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/vie_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "vmw_Latn",
+    "data_files": [
+     {
+      "path": "dev/vmw_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/vmw_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "war_Latn",
+    "data_files": [
+     {
+      "path": "dev/war_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/war_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "wol_Latn",
+    "data_files": [
+     {
+      "path": "dev/wol_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/wol_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "wuu_Hans",
+    "data_files": [
+     {
+      "path": "dev/wuu_Hans.jsonl",
+      "split": "dev"
+     }
+    ]
+   },
+   {
+    "config_name": "xho_Latn",
+    "data_files": [
+     {
+      "path": "dev/xho_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/xho_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "ydd_Hebr",
+    "data_files": [
+     {
+      "path": "dev/ydd_Hebr.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/ydd_Hebr.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "yor_Latn",
+    "data_files": [
+     {
+      "path": "dev/yor_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/yor_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "yue_Hant",
+    "data_files": [
+     {
+      "path": "dev/yue_Hant.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/yue_Hant.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "zgh_Tfng",
+    "data_files": [
+     {
+      "path": "dev/zgh_Tfng.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/zgh_Tfng.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "zsm_Latn",
+    "data_files": [
+     {
+      "path": "dev/zsm_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/zsm_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   },
+   {
+    "config_name": "zul_Latn",
+    "data_files": [
+     {
+      "path": "dev/zul_Latn.jsonl",
+      "split": "dev"
+     },
+     {
+      "path": "devtest/zul_Latn.jsonl",
+      "split": "devtest"
+     }
+    ]
+   }
+  ],
+  "extra_gated_heading": "Protecting the integrity of FLORES+ for evaluation",
+  "extra_gated_fields": {
+   "I agree not to re-host FLORES+ in places where it could be picked up by web crawlers": "checkbox",
+   "If I evaluate using FLORES+, I will ensure that its contents are not in the training data": "checkbox"
+  }
+ },
+ "files": [
+  [
+   ".gitattributes",
+   2555
+  ],
+  [
+   ".gitignore",
+   17
+  ],
+  [
+   "CHANGELOG.md",
+   8694
+  ],
+  [
+   "DCO",
+   1366
+  ],
+  [
+   "README.md",
+   75833
+  ],
+  [
+   "bibliography.bib",
+   28986
+  ],
+  [
+   "convert_parquet_to_jsonl.py",
+   1351
+  ],
+  [
+   "dataset_cards/apd_Arab.md",
+   3739
+  ],
+  [
+   "dataset_cards/arg_Latn.md",
+   3259
+  ],
+  [
+   "dataset_cards/ast_Latn.md",
+   2419
+  ],
+  [
+   "dataset_cards/cat_Latn_vale1252.md",
+   2697
+  ],
+  [
+   "dataset_cards/ccp_Cakm.md",
+   5596
+  ],
+  [
+   "dataset_cards/chv_Cyrl.md",
+   889
+  ],
+  [
+   "dataset_cards/cmn_Hans.md",
+   876
+  ],
+  [
+   "dataset_cards/cmn_Hant.md",
+   874
+  ],
+  [
+   "dataset_cards/dar_Cyrl.md",
+   979
+  ],
+  [
+   "dataset_cards/fil_Latn.md",
+   833
+  ],
+  [
+   "dataset_cards/frp_Latn.md",
+   3115
+  ],
+  [
+   "dataset_cards/kaa_Latn.md",
+   1669
+  ],
+  [
+   "dataset_cards/khk_Mong.md",
+   4257
+  ],
+  [
+   "dataset_cards/kjh_Cyrl.md",
+   8659
+  ],
+  [
+   "dataset_cards/lij_Latn.md",
+   1967
+  ],
+  [
+   "dataset_cards/lld_Latn.md",
+   4471
+  ],
+  [
+   "dataset_cards/lld_Latn_gard1241.md",
+   4431
+  ],
+  [
+   "dataset_cards/lmo_Latn_east2276.md",
+   900
+  ],
+  [
+   "dataset_cards/mfe_Latn.md",
+   4061
+  ],
+  [
+   "dataset_cards/mhr_Cyrl.md",
+   1125
+  ],
+  [
+   "dataset_cards/mni_Mtei.md",
+   3938
+  ],
+  [
+   "dataset_cards/myv_Cyrl.md",
+   2178
+  ],
+  [
+   "dataset_cards/nob_Latn.md",
+   4021
+  ],
+  [
+   "dataset_cards/nob_Latn_radical.md",
+   4159
+  ],
+  [
+   "dataset_cards/nya_Latn_MZ.md",
+   3210
+  ],
+  [
+   "dataset_cards/oci_Latn_aran1260.md",
+   3905
+  ],
+  [
+   "dataset_cards/seh_Latn_MZ.md",
+   3197
+  ],
+  [
+   "dataset_cards/tig_Ethi.md",
+   4315
+  ],
+  [
+   "dataset_cards/tso_Latn_MZ.md",
+   3214
+  ],
+  [
+   "dataset_cards/tyv_Cyrl.md",
+   2511
+  ],
+  [
+   "dataset_cards/udm_Cyrl.md",
+   1807
+  ],
+  [
+   "dataset_cards/uzs_Arab.md",
+   2919
+  ],
+  [
+   "dataset_cards/vmw_Latn.md",
+   2184
+  ],
+  [
+   "dataset_cards/wuu_Hans.md",
+   2769
+  ],
+  [
+   "dataset_cards/yue_Hant.md",
+   1441
+  ],
+  [
+   "dataset_cards/zgh_Tfng.md",
+   5549
+  ],
+  [
+   "dev/ace_Arab.jsonl",
+   486924
+  ],
+  [
+   "dev/ace_Latn.jsonl",
+   434195
+  ],
+  [
+   "dev/acm_Arab.jsonl",
+   494084
+  ],
+  [
+   "dev/acq_Arab.jsonl",
+   495855
+  ],
+  [
+   "dev/aeb_Arab.jsonl",
+   491325
+  ],
+  [
+   "dev/afr_Latn.jsonl",
+   431690
+  ],
+  [
+   "dev/als_Latn.jsonl",
+   449476
+  ],
+  [
+   "dev/amh_Ethi.jsonl",
+   515688
+  ],
+  [
+   "dev/apc_Arab_nort3139.jsonl",
+   484335
+  ],
+  [
+   "dev/apc_Arab_sout3123.jsonl",
+   484171
+  ],
+  [
+   "dev/apd_Arab.jsonl",
+   491935
+  ],
+  [
+   "dev/arb_Arab.jsonl",
+   498141
+  ],
+  [
+   "dev/arb_Latn.jsonl",
+   443803
+  ],
+  [
+   "dev/arg_Latn.jsonl",
+   445441
+  ],
+  [
+   "dev/ars_Arab.jsonl",
+   498421
+  ],
+  [
+   "dev/ary_Arab.jsonl",
+   492876
+  ],
+  [
+   "dev/arz_Arab.jsonl",
+   493504
+  ],
+  [
+   "dev/asm_Beng.jsonl",
+   619631
+  ],
+  [
+   "dev/ast_Latn.jsonl",
+   430057
+  ],
+  [
+   "dev/awa_Deva.jsonl",
+   613311
+  ],
+  [
+   "dev/ayr_Latn.jsonl",
+   431640
+  ],
+  [
+   "dev/azb_Arab.jsonl",
+   501752
+  ],
+  [
+   "dev/azj_Latn.jsonl",
+   455890
+  ],
+  [
+   "dev/bak_Cyrl.jsonl",
+   530912
+  ],
+  [
+   "dev/bam_Latn.jsonl",
+   428470
+  ],
+  [
+   "dev/ban_Latn.jsonl",
+   438057
+  ],
+  [
+   "dev/bel_Cyrl.jsonl",
+   559805
+  ],
+  [
+   "dev/bem_Latn.jsonl",
+   452974
+  ],
+  [
+   "dev/ben_Beng.jsonl",
+   627208
+  ],
+  [
+   "dev/bho_Deva.jsonl",
+   607818
+  ],
+  [
+   "dev/bjn_Arab.jsonl",
+   509292
+  ],
+  [
+   "dev/bjn_Latn.jsonl",
+   429555
+  ],
+  [
+   "dev/bod_Tibt.jsonl",
+   716122
+  ],
+  [
+   "dev/bos_Latn.jsonl",
+   427321
+  ],
+  [
+   "dev/brx_Deva.jsonl",
+   649657
+  ],
+  [
+   "dev/bug_Latn.jsonl",
+   435631
+  ],
+  [
+   "dev/bul_Cyrl.jsonl",
+   534552
+  ],
+  [
+   "dev/cat_Latn.jsonl",
+   438345
+  ],
+  [
+   "dev/ccp_Cakm.jsonl",
+   734903
+  ],
+  [
+   "dev/ceb_Latn.jsonl",
+   447645
+  ],
+  [
+   "dev/ces_Latn.jsonl",
+   433235
+  ],
+  [
+   "dev/chv_Cyrl.jsonl",
+   538733
+  ],
+  [
+   "dev/cjk_Latn.jsonl",
+   433516
+  ],
+  [
+   "dev/ckb_Arab.jsonl",
+   529663
+  ],
+  [
+   "dev/cmn_Hans.jsonl",
+   414496
+  ],
+  [
+   "dev/cmn_Hant.jsonl",
+   408693
+  ],
+  [
+   "dev/crh_Latn.jsonl",
+   439279
+  ],
+  [
+   "dev/cym_Latn.jsonl",
+   431505
+  ],
+  [
+   "dev/dan_Latn.jsonl",
+   429108
+  ],
+  [
+   "dev/dar_Cyrl.jsonl",
+   563901
+  ],
+  [
+   "dev/deu_Latn.jsonl",
+   446346
+  ],
+  [
+   "dev/dgo_Deva.jsonl",
+   638565
+  ],
+  [
+   "dev/dik_Latn.jsonl",
+   418976
+  ],
+  [
+   "dev/dyu_Latn.jsonl",
+   431753
+  ],
+  [
+   "dev/dzo_Tibt.jsonl",
+   760801
+  ],
+  [
+   "dev/ekk_Latn.jsonl",
+   424247
+  ],
+  [
+   "dev/ell_Grek.jsonl",
+   570525
+  ],
+  [
+   "dev/eng_Latn.jsonl",
+   422669
+  ],
+  [
+   "dev/epo_Latn.jsonl",
+   424969
+  ],
+  [
+   "dev/eus_Latn.jsonl",
+   431180
+  ],
+  [
+   "dev/ewe_Latn.jsonl",
+   432080
+  ],
+  [
+   "dev/fao_Latn.jsonl",
+   434759
+  ],
+  [
+   "dev/fij_Latn.jsonl",
+   443675
+  ],
+  [
+   "dev/fil_Latn.jsonl",
+   455117
+  ],
+  [
+   "dev/fin_Latn.jsonl",
+   436474
+  ],
+  [
+   "dev/fon_Latn.jsonl",
+   455420
+  ],
+  [
+   "dev/fra_Latn.jsonl",
+   451837
+  ],
+  [
+   "dev/frp_Latn_savo1253.jsonl",
+   450505
+  ],
+  [
+   "dev/fur_Latn.jsonl",
+   439527
+  ],
+  [
+   "dev/fuv_Latn.jsonl",
+   418060
+  ],
+  [
+   "dev/gaz_Latn.jsonl",
+   448421
+  ],
+  [
+   "dev/gla_Latn.jsonl",
+   458892
+  ],
+  [
+   "dev/gle_Latn.jsonl",
+   451987
+  ],
+  [
+   "dev/glg_Latn.jsonl",
+   439399
+  ],
+  [
+   "dev/gom_Deva.jsonl",
+   616809
+  ],
+  [
+   "dev/gug_Latn.jsonl",
+   434064
+  ],
+  [
+   "dev/guj_Gujr.jsonl",
+   612384
+  ],
+  [
+   "dev/hat_Latn.jsonl",
+   416201
+  ],
+  [
+   "dev/hau_Latn.jsonl",
+   434949
+  ],
+  [
+   "dev/heb_Hebr.jsonl",
+   471951
+  ],
+  [
+   "dev/hin_Deva.jsonl",
+   619488
+  ],
+  [
+   "dev/hne_Deva.jsonl",
+   607816
+  ],
+  [
+   "dev/hrv_Latn.jsonl",
+   424782
+  ],
+  [
+   "dev/hun_Latn.jsonl",
+   442416
+  ],
+  [
+   "dev/hye_Armn.jsonl",
+   554992
+  ],
+  [
+   "dev/ibo_Latn.jsonl",
+   447119
+  ],
+  [
+   "dev/ilo_Latn.jsonl",
+   449266
+  ],
+  [
+   "dev/ind_Latn.jsonl",
+   433908
+  ],
+  [
+   "dev/isl_Latn.jsonl",
+   434629
+  ],
+  [
+   "dev/ita_Latn.jsonl",
+   445611
+  ],
+  [
+   "dev/jav_Latn.jsonl",
+   427853
+  ],
+  [
+   "dev/jpn_Jpan.jsonl",
+   457276
+  ],
+  [
+   "dev/kab_Latn.jsonl",
+   430135
+  ],
+  [
+   "dev/kac_Latn.jsonl",
+   455552
+  ],
+  [
+   "dev/kam_Latn.jsonl",
+   424757
+  ],
+  [
+   "dev/kan_Knda.jsonl",
+   654846
+  ],
+  [
+   "dev/kas_Arab.jsonl",
+   514218
+  ],
+  [
+   "dev/kas_Deva.jsonl",
+   599461
+  ],
+  [
+   "dev/kat_Geor.jsonl",
+   669900
+  ],
+  [
+   "dev/kaz_Cyrl.jsonl",
+   534233
+  ],
+  [
+   "dev/kbp_Latn.jsonl",
+   470701
+  ],
+  [
+   "dev/kea_Latn.jsonl",
+   424826
+  ],
+  [
+   "dev/khk_Cyrl.jsonl",
+   539133
+  ],
+  [
+   "dev/khm_Khmr.jsonl",
+   724523
+  ],
+  [
+   "dev/kik_Latn.jsonl",
+   460906
+  ],
+  [
+   "dev/kin_Latn.jsonl",
+   440566
+  ],
+  [
+   "dev/kir_Cyrl.jsonl",
+   533103
+  ],
+  [
+   "dev/kjh_Cyrl.jsonl",
+   549172
+  ],
+  [
+   "dev/kmb_Latn.jsonl",
+   436899
+  ],
+  [
+   "dev/kmr_Latn.jsonl",
+   436296
+  ],
+  [
+   "dev/knc_Arab.jsonl",
+   498374
+  ],
+  [
+   "dev/knc_Latn.jsonl",
+   436597
+  ],
+  [
+   "dev/kor_Hang.jsonl",
+   448560
+  ],
+  [
+   "dev/ktu_Latn.jsonl",
+   440384
+  ],
+  [
+   "dev/lao_Laoo.jsonl",
+   642112
+  ],
+  [
+   "dev/lij_Latn.jsonl",
+   443289
+  ],
+  [
+   "dev/lim_Latn.jsonl",
+   431083
+  ],
+  [
+   "dev/lin_Latn.jsonl",
+   432928
+  ],
+  [
+   "dev/lit_Latn.jsonl",
+   431814
+  ],
+  [
+   "dev/lld_Latn.jsonl",
+   435026
+  ],
+  [
+   "dev/lld_Latn_gard1241.jsonl",
+   435607
+  ],
+  [
+   "dev/lmo_Latn.jsonl",
+   442719
+  ],
+  [
+   "dev/lmo_Latn_east2276.jsonl",
+   451954
+  ],
+  [
+   "dev/ltg_Latn.jsonl",
+   429255
+  ],
+  [
+   "dev/ltz_Latn.jsonl",
+   442206
+  ],
+  [
+   "dev/lua_Latn.jsonl",
+   432279
+  ],
+  [
+   "dev/lug_Latn.jsonl",
+   426682
+  ],
+  [
+   "dev/luo_Latn.jsonl",
+   429159
+  ],
+  [
+   "dev/lus_Latn.jsonl",
+   434293
+  ],
+  [
+   "dev/lvs_Latn.jsonl",
+   437916
+  ],
+  [
+   "dev/mag_Deva.jsonl",
+   607705
+  ],
+  [
+   "dev/mai_Deva.jsonl",
+   615571
+  ],
+  [
+   "dev/mal_Mlym.jsonl",
+   688959
+  ],
+  [
+   "dev/mar_Deva.jsonl",
+   633338
+  ],
+  [
+   "dev/mfe_Latn.jsonl",
+   415254
+  ],
+  [
+   "dev/mhr_Cyrl.jsonl",
+   538536
+  ],
+  [
+   "dev/min_Arab.jsonl",
+   515471
+  ],
+  [
+   "dev/min_Latn.jsonl",
+   430693
+  ],
+  [
+   "dev/mkd_Cyrl.jsonl",
+   534915
+  ],
+  [
+   "dev/mlt_Latn.jsonl",
+   442744
+  ],
+  [
+   "dev/mni_Beng.jsonl",
+   644822
+  ],
+  [
+   "dev/mni_Mtei.jsonl",
+   621152
+  ],
+  [
+   "dev/mos_Latn.jsonl",
+   428246
+  ],
+  [
+   "dev/mri_Latn.jsonl",
+   442564
+  ],
+  [
+   "dev/mya_Mymr.jsonl",
+   741477
+  ],
+  [
+   "dev/myv_Cyrl.jsonl",
+   545946
+  ],
+  [
+   "dev/nld_Latn.jsonl",
+   436513
+  ],
+  [
+   "dev/nno_Latn.jsonl",
+   427806
+  ],
+  [
+   "dev/nob_Latn.jsonl",
+   424617
+  ],
+  [
+   "dev/nob_Latn_radical.jsonl",
+   431468
+  ],
+  [
+   "dev/npi_Deva.jsonl",
+   620318
+  ],
+  [
+   "dev/nqo_Nkoo.jsonl",
+   585932
+  ],
+  [
+   "dev/nso_Latn.jsonl",
+   445588
+  ],
+  [
+   "dev/nus_Latn.jsonl",
+   463180
+  ],
+  [
+   "dev/nya_Latn.jsonl",
+   439010
+  ],
+  [
+   "dev/nya_Latn_MZ.jsonl",
+   434006
+  ],
+  [
+   "dev/oci_Latn.jsonl",
+   444250
+  ]
+ ],
+ "readme": "---\nannotations_creators:\n- found\nlanguage_creators:\n- expert-generated\nlanguage:\n- ace\n- acm\n- acq\n- aeb\n- af\n- ajp\n- ak\n- als\n- am\n- apc\n- apd\n- ar\n- ars\n- ary\n- arz\n- as\n- ast\n- awa\n- ayr\n- azb\n- azj\n- ba\n- bm\n- ban\n- be\n- bem\n- bn\n- bho\n- bjn\n- bo\n- bs\n- bug\n- bg\n- ca\n- ccp\n- ceb\n- cs\n- cjk\n- ckb\n- crh\n- cy\n- da\n- de\n- dar\n- dik\n- dyu\n- dz\n- el\n- en\n- eo\n- et\n- eu\n- ee\n- fo\n- fj\n- fi\n- fon\n- fr\n- frp\n- fur\n- fuv\n- gaz\n- gd\n- ga\n- gl\n- gn\n- gu\n- ht\n- ha\n- he\n- hi\n- hne\n- hr\n- hu\n- hy\n- ig\n- ilo\n- id\n- is\n- it\n- jv\n- ja\n- kab\n- kac\n- kam\n- kn\n- ks\n- ka\n- kk\n- kbp\n- kea\n- khk\n- km\n- ki\n- rw\n- kjh\n- ky\n- kmb\n- kmr\n- knc\n- kg\n- ko\n- lo\n- lij\n- li\n- lld\n- ln\n- lt\n- lmo\n- ltg\n- lb\n- lua\n- lg\n- luo\n- lus\n- lvs\n- mag\n- mai\n- ml\n- mar\n- mfe\n- mhr\n- min\n- mk\n- mt\n- mni\n- mos\n- mi\n- my\n- nl\n- nn\n- nb\n- npi\n- nso\n- nus\n- ny\n- oc\n- ory\n- pag\n- pa\n- pap\n- pbt\n- pes\n- plt\n- pl\n- pt\n- prs\n- quy\n- ro\n- rn\n- ru\n- sg\n- sa\n- sat\n- scn\n- seh\n- shn\n- si\n- sk\n- sl\n- sm\n- sn\n- sd\n- so\n- st\n- es\n- sc\n- sr\n- ss\n- su\n- sv\n- swh\n- szl\n- ta\n- taq\n- tt\n- te\n- tg\n- tl\n- th\n- ti\n- tig\n- tpi\n- tn\n- ts\n- tk\n- tum\n- tr\n- tw\n- tzm\n- udm\n- ug\n- uk\n- umb\n- ur\n- uzn\n- uzs\n- vec\n- vi\n- war\n- wo\n- xh\n- ydd\n- yo\n- yue\n- zgh\n- zh\n- zsm\n- zu\nlicense:\n- cc-by-sa-4.0\nmultilinguality:\n- multilingual\n- translation\nsize_categories:\n- unknown\nsource_datasets:\n- extended|flores\ntask_categories:\n- text-generation\n- translation\ntask_ids: []\npretty_name: flores+\nlanguage_details: ace_Arab, ace_Latn, acm_Arab, acq_Arab, aeb_Arab, afr_Latn, ajp_Arab,\n  aka_Latn, amh_Ethi, apc_Arab, apd_Arab, arb_Arab, ars_Arab, ary_Arab, arz_Arab, asm_Beng,\n  ast_Latn, awa_Deva, ayr_Latn, azb_Arab, azj_Latn, bak_Cyrl, bam_Latn, ban_Latn, bel_Cyrl,\n  bem_Latn, ben_Beng, bho_Deva, bjn_Arab, bjn_Latn, bod_Tibt, bos_Latn, bug_Latn,\n  bul_Cyrl, cat_Latn, ccp_Cakm, ceb_Latn, ces_Latn, cjk_Latn, ckb_Arab, crh_Latn, cym_Latn,\n  dan_Latn, deu_Latn, dar_Cyrl, dik_Latn, dyu_Latn, dzo_Tibt, ell_Grek, eng_Latn, epo_Latn,\n  est_Latn, eus_Latn, ewe_Latn, fao_Latn, pes_Arab, fij_Latn, fin_Latn, fon_Latn,\n  fra_Latn, frp_Latn, fur_Latn, fuv_Latn, gla_Latn, gle_Latn, glg_Latn, grn_Latn, guj_Gujr,\n  hat_Latn, hau_Latn, heb_Hebr, hin_Deva, hne_Deva, hrv_Latn, hun_Latn, hye_Armn,\n  ibo_Latn, ilo_Latn, ind_Latn, isl_Latn, ita_Latn, jav_Latn, jpn_Jpan, kab_Latn,\n  kac_Latn, kam_Latn, kan_Knda, kas_Arab, kas_Deva, kat_Geor, knc_Arab, knc_Latn,\n  kaz_Cyrl, kbp_Latn, kea_Latn, khm_Khmr, kik_Latn, kin_Latn, kir_Cyrl, kjh_Cyrl, kmb_Latn,\n  kon_Latn, kor_Hang, kmr_Latn, lao_Laoo, lvs_Latn, lij_Latn, lim_Latn, lin_Latn,\n  lit_Latn, lld_Latn, lmo_Latn, ltg_Latn, ltz_Latn, lua_Latn, lug_Latn, luo_Latn, lus_Latn,\n  mag_Deva, mai_Deva, mal_Mlym, mar_Deva, mfe_Latn, mhr_Cyrl, min_Latn, mkd_Cyrl, plt_Latn, mlt_Latn,\n  mni_Beng, mni_Mtei, khk_Cyrl, khk_Mong, mos_Latn, mri_Latn, zsm_Latn, mya_Mymr, nld_Latn, nno_Latn,\n  nob_Latn, npi_Deva, nso_Latn, nus_Latn, nya_Latn, oci_Latn, gaz_Latn, ory_Orya,\n  pag_Latn, pan_Guru, pap_Latn, pol_Latn, por_Latn, prs_Arab, pbt_Arab, quy_Latn,\n  ron_Latn, run_Latn, rus_Cyrl, sag_Latn, san_Deva, sat_Beng, scn_Latn, seh_Latn, shn_Mymr,\n  sin_Sinh, slk_Latn, slv_Latn, smo_Latn, sna_Latn, snd_Arab, som_Latn, sot_Latn,\n  spa_Latn, als_Latn, srd_Latn, srp_Cyrl, ssw_Latn, sun_Latn, swe_Latn, swh_Latn,\n  szl_Latn, tam_Taml, tat_Cyrl, tel_Telu, tgk_Cyrl, tgl_Latn, tha_Thai, tig_Ethi, tir_Ethi,\n  taq_Latn, taq_Tfng, tpi_Latn, tsn_Latn, tso_Latn, tuk_Latn, tum_Latn, tur_Latn,\n  twi_Latn, tzm_Tfng, udm_Cyrl, uig_Arab, ukr_Cyrl, umb_Latn, urd_Arab, uzn_Latn, uzs_Arab, vec_Latn,\n  vie_Latn, war_Latn, wol_Latn, xho_Latn, ydd_Hebr, yor_Latn, yue_Hant, zgh_Tfng, zho_Hans,\n  zho_Hant, zul_Latn\ntags:\n- text\nconfigs:\n- config_name: default\n  data_files:\n  - split: dev\n    path: \"dev/*.jsonl\"\n  - split: devtest\n    path: \"devtest/*.jsonl\"\n# all configs below were generated automatically based on the filenames of the dataset contents\n- config_name: ace_Arab\n  data_files:\n  - path: dev/ace_Arab.jsonl\n    split: dev\n  - path: devtest/ace_Arab.jsonl\n    split: devtest\n- config_name: ace_Latn\n  data_files:\n  - path: dev/ace_Latn.jsonl\n    split: dev\n  - path: devtest/ace_Latn.jsonl\n    split: devtest\n- config_name: acm_Arab\n  data_files:\n  - path: dev/acm_Arab.jsonl\n    split: dev\n  - path: devtest/acm_Arab.jsonl\n    split: devtest\n- config_name: acq_Arab\n  data_files:\n  - path: dev/acq_Arab.jsonl\n    split: dev\n  - path: devtest/acq_Arab.jsonl\n    split: devtest\n- config_name: aeb_Arab\n  data_files:\n  - path: dev/aeb_Arab.jsonl\n    split: dev\n  - path: devtest/aeb_Arab.jsonl\n    split: devtest\n- config_name: afr_Latn\n  data_files:\n  - path: dev/afr_Latn.jsonl\n    split: dev\n  - path: devtest/afr_Latn.jsonl\n    split: devtest\n- config_name: als_Latn\n  data_files:\n  - path: dev/als_Latn.jsonl\n    split: dev\n  - path: devtest/als_Latn.jsonl\n    split: devtest\n- config_name: amh_Ethi\n  data_files:\n  - path: dev/amh_Ethi.jsonl\n    split: dev\n  - path: devtest/amh_Ethi.jsonl\n    split: devtest\n- config_name: apc_Arab_nort3139\n  data_files:\n  - path: dev/apc_Arab_nort3139.jsonl\n    split: dev\n  - path: devtest/apc_Arab_nort3139.jsonl\n    split: devtest\n- config_name: apc_Arab_sout3123\n  data_files:\n  - path: dev/apc_Arab_sout3123.jsonl\n    split: dev\n  - path: devtest/apc_Arab_sout3123.jsonl\n    split: devtest\n- config_name: apd_Arab\n  data_files:\n  - path: dev/apd_Arab.jsonl\n    split: dev\n  - path: devtest/apd_Arab.jsonl\n    split: devtest\n- config_name: arb_Arab\n  data_files:\n  - path: dev/arb_Arab.jsonl\n    split: dev\n  - path: devtest/arb_Arab.jsonl\n    split: devtest\n- config_name: arb_Latn\n  data_files:\n  - path: dev/arb_Latn.jsonl\n    split: dev\n  - path: devtest/arb_Latn.jsonl\n    split: devtest\n- config_name: arg_Latn\n  data_files:\n  - path: dev/arg_Latn.jsonl\n    split: dev\n  - path: devtest/arg_Latn.jsonl\n    split: devtest\n- config_name: ars_Arab\n  data_files:\n  - path: dev/ars_Arab.jsonl\n    split: dev\n  - path: devtest/ars_Arab.jsonl\n    split: devtest\n- config_name: ary_Arab\n  data_files:\n  - path: dev/ary_Arab.jsonl\n    split: dev\n  - path: devtest/ary_Arab.jsonl\n    split: devtest\n- config_name: arz_Arab\n  data_files:\n  - path: dev/arz_Arab.jsonl\n    split: dev\n  - path: devtest/arz_Arab.jsonl\n    split: devtest\n- config_name: asm_Beng\n  data_files:\n  - path: dev/asm_Beng.jsonl\n    split: dev\n  - path: devtest/asm_Beng.jsonl\n    split: devtest\n- config_name: ast_Latn\n  data_files:\n  - path: dev/ast_Latn.jsonl\n    split: dev\n  - path: devtest/ast_Latn.jsonl\n    split: devtest\n- config_name: awa_Deva\n  data_files:\n  - path: dev/awa_Deva.jsonl\n    split: dev\n  - path: devtest/awa_Deva.jsonl\n    split: devtest\n- config_name: ayr_Latn\n  data_files:\n  - path: dev/ayr_Latn.jsonl\n    split: dev\n  - path: devtest/ayr_Latn.jsonl\n    split: devtest\n- config_name: azb_Arab\n  data_files:\n  - path: dev/azb_Arab.jsonl\n    split: dev\n  - path: devtest/azb_Arab.jsonl\n    split: devtest\n- config_name: azj_Latn\n  data_files:\n  - path: dev/azj_Latn.jsonl\n    split: dev\n  - path: devtest/azj_Latn.jsonl\n    split: devtest\n- config_name: bak_Cyrl\n  data_files:\n  - path: dev/bak_Cyrl.jsonl\n    split: dev\n  - path: devtest/bak_Cyrl.jsonl\n    split: devtest\n- config_name: bam_Latn\n  data_files:\n  - path: dev/bam_Latn.jsonl\n    split: dev\n  - path: devtest/bam_Latn.jsonl\n    split: devtest\n- config_name: ban_Latn\n  data_files:\n  - path: dev/ban_Latn.jsonl\n    split: dev\n  - path: devtest/ban_Latn.jsonl\n    split: devtest\n- config_name: bel_Cyrl\n  data_files:\n  - path: dev/bel_Cyrl.jsonl\n    split: dev\n  - path: devtest/bel_Cyrl.jsonl\n    split: devtest\n- config_name: bem_Latn\n  data_files:\n  - path: dev/bem_Latn.jsonl\n    split: dev\n  - path: devtest/bem_Latn.jsonl\n    split: devtest\n- config_name: ben_Beng\n  data_files:\n  - path: dev/ben_Beng.jsonl\n    split: dev\n  - path: devtest/ben_Beng.jsonl\n    split: devtest\n- config_name: bho_Deva\n  data_files:\n  - path: dev/bho_Deva.jsonl\n    split: dev\n  - path: devtest/bho_Deva.jsonl\n    split: devtest\n- config_name: bjn_Arab\n  data_files:\n  - path: dev/bjn_Arab.jsonl\n    split: dev\n  - path: devtest/bjn_Arab.jsonl\n    split: devtest\n- config_name: bjn_Latn\n  data_files:\n  - path: dev/bjn_Latn.jsonl\n    split: dev\n  - path: devtest/bjn_Latn.jsonl\n    split: devtest\n- config_name: bod_Tibt\n  data_files:\n  - path: dev/bod_Tibt.jsonl\n    split: dev\n  - path: devtest/bod_Tibt.jsonl\n    split: devtest\n- config_name: bos_Latn\n  data_files:\n  - path: dev/bos_Latn.jsonl\n    split: dev\n  - path: devtest/bos_Latn.jsonl\n    split: devtest\n- config_name: brx_Deva\n  data_files:\n  - path: dev/brx_Deva.jsonl\n    split: dev\n- config_name: bug_Latn\n  data_files:\n  - path: dev/bug_Latn.jsonl\n    split: dev\n  - path: devtest/bug_Latn.jsonl\n    split: devtest\n- config_name: bul_Cyrl\n  data_files:\n  - path: dev/bul_Cyrl.jsonl\n    split: dev\n  - path: devtest/bul_Cyrl.jsonl\n    split: devtest\n- config_name: cat_Latn\n  data_files:\n  - path: dev/cat_Latn.jsonl\n    split: dev\n  - path: devtest/cat_Latn.jsonl\n    split: devtest\n- config_name: cat_Latn_vale1252\n  data_files:\n  - path: devtest/cat_Latn_vale1252.jsonl\n    split: devtest\n- config_name: ccp_Cakm\n  data_files:\n  - path: dev/ccp_Cakm.jsonl\n    split: dev\n  - path: devtest/ccp_Cakm.jsonl\n    split: devtest\n- config_name: ceb_Latn\n  data_files:\n  - path: dev/ceb_Latn.jsonl\n    split: dev\n  - path: devtest/ceb_Latn.jsonl\n    split: devtest\n- config_name: ces_Latn\n  data_files:\n  - path: dev/ces_Latn.jsonl\n    split: dev\n  - path: devtest/ces_Latn.jsonl\n    split: devtest\n- config_name: chv_Cyrl\n  data_files:\n  - path: dev/chv_Cyrl.jsonl\n    split: dev\n  - path: devtest/chv_Cyrl.jsonl\n    split: devtest\n- config_name: cjk_Latn\n  data_files:\n  - path: dev/cjk_Latn.jsonl\n    split: dev\n  - path: devtest/cjk_Latn.jsonl\n    split: devtest\n- config_name: ckb_Arab\n  data_files:\n  - path: dev/ckb_Arab.jsonl\n    split: dev\n  - path: devtest/ckb_Arab.jsonl\n    split: devtest\n- config_name: cmn_Hans\n  data_files:\n  - path: dev/cmn_Hans.jsonl\n    split: dev\n  - path: devtest/cmn_Hans.jsonl\n    split: devtest\n- config_name: cmn_Hant\n  data_files:\n  - path: dev/cmn_Hant.jsonl\n    split: dev\n  - path: devtest/cmn_Hant.jsonl\n    split: devtest\n- config_name: crh_Latn\n  data_files:\n  - path: dev/crh_Latn.jsonl\n    split: dev\n  - path: devtest/crh_Latn.jsonl\n    split: devtest\n- config_name: cym_Latn\n  data_files:\n  - path: dev/cym_Latn.jsonl\n    split: dev\n  - path: devtest/cym_Latn.jsonl\n    split: devtest\n- config_name: dan_Latn\n  data_files:\n  - path: dev/dan_Latn.jsonl\n    split: dev\n  - path: devtest/dan_Latn.jsonl\n    split: devtest\n- config_name: dar_Cyrl\n  data_files:\n  - path: dev/dar_Cyrl.jsonl\n    split: dev\n- config_name: deu_Latn\n  data_files:\n  - path: dev/deu_Latn.jsonl\n    split: dev\n  - path: devtest/deu_Latn.jsonl\n    split: devtest\n- config_name: dgo_Deva\n  data_files:\n  - path: dev/dgo_Deva.jsonl\n    split: dev\n- config_name: dik_Latn\n  data_files:\n  - path: dev/dik_Latn.jsonl\n    split: dev\n  - path: devtest/dik_Latn.jsonl\n    split: devtest\n- config_name: dyu_Latn\n  data_files:\n  - path: dev/dyu_Latn.jsonl\n    split: dev\n  - path: devtest/dyu_Latn.jsonl\n    split: devtest\n- config_name: dzo_Tibt\n  data_files:\n  - path: dev/dzo_Tibt.jsonl\n    split: dev\n  - path: devtest/dzo_Tibt.jsonl\n    split: devtest\n- config_name: ekk_Latn\n  data_files:\n  - path: dev/ekk_Latn.jsonl\n    split: dev\n  - path: devtest/ekk_Latn.jsonl\n    split: devtest\n- config_name: ell_Grek\n  data_files:\n  - path: dev/ell_Grek.jsonl\n    split: dev\n  - path: devtest/ell_Grek.jsonl\n    split: devtest\n- config_name: eng_Latn\n  data_files:\n  - path: dev/eng_Latn.jsonl\n    split: dev\n  - path: devtest/eng_Latn.jsonl\n    split: devtest\n- config_name: epo_Latn\n  data_files:\n  - path: dev/epo_Latn.jsonl\n    split: dev\n  - path: devtest/epo_Latn.jsonl\n    split: devtest\n- config_name: eus_Latn\n  data_files:\n  - path: dev/eus_Latn.jsonl\n    split: dev\n  - path: devtest/eus_Latn.jsonl\n    split: devtest\n- config_name: ewe_Latn\n  data_files:\n  ",
+ "load_error": "DatasetNotFoundError: Dataset 'openlanguagedata/flores_plus' is a gated dataset on the Hub. You must be authenticated to access it."
+}
