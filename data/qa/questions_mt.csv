@@ -1,0 +1,101 @@
+id,topic,lang,question,answer,source
+health_1,health,en,In what year did Ghana pass its national health insurance law?,2003 (put into effect in 2004),original
+health_1,health,twi,Wɔ afe bɛn mu na Ghana de ɔman ayaresa ho mmara no mae?,2003 (put into effect in 2004),mt
+health_1,health,ewe,Ƒe ka mee Ghana da asi ɖe eƒe dukɔ me lãmesẽkuxiwo gbɔ kpɔkpɔ se dzi?,2003 (put into effect in 2004),mt
+health_1,health,gaa,Mɛɛ afi nɔ Ghana ye maŋ lɛ helatsamɔ he mla lɛ nɔ?,2003 (put into effect in 2004),mt
+health_1,health,hau,A wace shekara ce Ghana ta zartar da dokar inshorar lafiya ta kasa?,2003 (put into effect in 2004),mt
+health_2,health,en,Does Ghana's National Health Insurance cover maternity care?,Yes,original
+health_2,health,twi,Ayarehwɛ a ɛwɔ Ghana no ka awo ho nsɛm anaa?,Yes,mt
+health_2,health,ewe,Ðe Ghana-dukɔa ƒe lãmesẽkuxiwo kpɔa vidzidzi dzi kpɔa?,Yes,mt
+health_2,health,gaa,Ani Ghana Maŋ Hewalɛnamɔ he tsofai lɛ ji nɔ ni akɛkwɛɔ mɛi ni egbɔlɔ lɛ?,Yes,mt
+health_2,health,hau,Shin asusun inshorar lafiya na kasar Ghana ya rufe kulawar haihuwa?,Yes,mt
+health_3,health,en,What is the name of the malaria vaccine Ghana began giving children in 2019?,"RTS,S",original
+health_3,health,twi,Dɛn ne atiridiinini a Ghana fii ase de maa mmofra wɔ afe 2019 mu no din?,"RTS,S",mt
+health_3,health,ewe,Aleke woyɔa asrãdɔ dɔlékui si Ghana dze edzi na ɖeviwo le ƒe 2019 me?,"RTS,S",mt
+health_3,health,gaa,Mɛni ji atridii ni naa wa waa ni atsɛɔ lɛ Ghana lɛ gbɛi?,"RTS,S",mt
+health_3,health,hau,Menene sunan allurar rigakafin zazzabin cizon sauro da Ghana ta fara baiwa yara a shekarar 2019?,"RTS,S",mt
+health_4,health,en,In which month and year did Ghana start giving the malaria vaccine in its pilot programme?,April 2019,original
+health_4,health,twi,Bosome ne afe bɛn mu na Ghana fii ase de atiridiinini dii dwuma wɔ n'akwankyerɛ nhyehyɛe mu?,April 2019,mt
+health_4,health,ewe,Ɣleti kple ƒe ka mee Ghana de asi asrãdɔ ƒe dɔdamɔnu zazã me le eƒe mɔ̃ɖaŋununya ƒe ɖoɖowɔɖi me?,April 2019,mt
+health_4,health,gaa,Mɛɛ nyɔŋ kɛ afi Ghana Ghana bɔi atridii ni naa wa waa lɛ hamɔ yɛ kɔɔyɔŋ lɛlɛ kudɔlɔ lɛ gbɛjianɔtoo mli?,April 2019,mt
+health_4,health,hau,A wane wata da shekara ne Ghana ta fara ba da allurar rigakafin zazzabin cizon sauro a cikin shirin gwaji?,April 2019,mt
+health_5,health,en,"Which three countries piloted the RTS,S malaria vaccine?","Ghana, Kenya and Malawi",original
+health_5,health,twi,"Aman abiɛsa bɛn na wɔyɛɛ RTS,S atiridiinini no ho nhwehwɛmu?","Ghana, Kenya and Malawi",mt
+health_5,health,ewe,"Dukɔ etɔ̃ kawoe wɔ dɔdamɔnu si woyɔna be RTS,S na asrãdɔ?","Ghana, Kenya and Malawi",mt
+health_5,health,gaa,Mɛɛ maji etɛ ko ni he yɔɔ gbeyei waa kɛ atridii ni naa wa waa ba?,"Ghana, Kenya and Malawi",mt
+health_5,health,hau,"Waɗanne ƙasashe uku ne suka yi gwajin rigakafin RTS,S na zazzabin cizon sauro?","Ghana, Kenya and Malawi",mt
+money_1,money,en,Is the E-levy still charged on mobile money transfers in Ghana?,"No, it was repealed from 2 April 2025",original
+money_1,money,twi,Wɔda so ara tua E-Tax wɔ sika a wɔde fa fon so kɔ Ghana no so anaa?,"No, it was repealed from 2 April 2025",mt
+money_1,money,ewe,Ðe wogakpɔtɔ xea adzɔ si wozãna ɖe ga ŋu le asitelefon dzi le Ghanaa?,"No, it was repealed from 2 April 2025",mt
+money_1,money,gaa,Ani aheɔ shika ni akɛwoɔ tsɔne mli lɛ lolo yɛ Ghana?,"No, it was repealed from 2 April 2025",mt
+money_1,money,hau,Shin har yanzu ana cajin harajin E-ta hanyar canja wurin kudi ta wayar salula a Ghana?,"No, it was repealed from 2 April 2025",mt
+money_2,money,en,What was the rate of the E-levy on electronic transfers before it was abolished?,1%,original
+money_2,money,twi,"Ansa na wɔreyi E-Tax no afi hɔ no, na ɛte sɛn?",1%,mt
+money_2,money,ewe,"Hafi woaɖe adzɔ sia ɖa la, nu kae wotsɔna xea adzɔ si wozãna le asitelefon dzi?",1%,mt
+money_2,money,gaa,Mɛni ji nibii ni akɛwoɔ Intanɛt lɛ nɔ dani agu?,1%,mt
+money_2,money,hau,Menene adadin harajin E-ta hanyar canja wurin lantarki kafin a soke shi?,1%,mt
+money_3,money,en,How many pesewas make one Ghana cedi?,100,original
+money_3,money,twi,Pisewa ahe na ɛma Ghana cedi biako?,100,mt
+money_3,money,ewe,Pesewa nenie nye Ghana cedi ɖeka?,100,mt
+money_3,money,gaa,Te pese feɔ tɛŋŋ efeɔ Ghana jamɔ kuu kome?,100,mt
+money_3,money,hau,Pesawa nawa ne ke yin cedi guda na Ghana?,100,mt
+money_4,money,en,What does SSNIT stand for?,Social Security and National Insurance Trust,original
+money_4,money,twi,Dɛn na SSNIT gyina hɔ ma?,Social Security and National Insurance Trust,mt
+money_4,money,ewe,Nu kae SSNIT fia?,Social Security and National Insurance Trust,mt
+money_4,money,gaa,Mɛni ji nɔ ni SSISI damɔ shi kɛha?,Social Security and National Insurance Trust,mt
+money_4,money,hau,Mene ne ma'anar SSNIT?,Social Security and National Insurance Trust,mt
+money_5,money,en,In what year was SSNIT established?,1972,original
+money_5,money,twi,Afe bɛn na wɔhyehyɛɛ SSNIT?,1972,mt
+money_5,money,ewe,Ƒe ka mee woɖo SSNIT?,1972,mt
+money_5,money,gaa,Mɛɛ afi nɔ ato SSIT shishi?,1972,mt
+money_5,money,hau,A wace shekara aka kafa SSNIT?,1972,mt
+government_1,government,en,How many regions does Ghana have?,16,original
+government_1,government,twi,Mmeae ahe na ɛwɔ Ghana?,16,mt
+government_1,government,ewe,Nuto nenie le Ghana?,16,mt
+government_1,government,gaa,Hei enyiɛ Ghana yɔɔ?,16,mt
+government_1,government,hau,Yankuna nawa ne Ghana ke da su?,16,mt
+government_2,government,en,What is the minimum age to vote in Ghana?,18,original
+government_2,government,twi,Mfe dodow bɛn na ɛsɛ sɛ obi di ansa na watumi asi gyinae wɔ Ghana?,18,mt
+government_2,government,ewe,Ƒe nenie wòle be ame naxɔ hafi ate ŋu ada akɔ le Ghana?,18,mt
+government_2,government,gaa,Mɛni ji afii ni faaa kwraa fe fɛɛ ni akɛfɔ̃ oshiki yɛ Ghana?,18,mt
+government_2,government,hau,Menene mafi karancin shekarun da za a kada kuri'a a Ghana?,18,mt
+government_3,government,en,"Under the 1992 Constitution, how long is a presidential term in Ghana and how many terms can a president serve?","Four years, at most two terms",original
+government_3,government,twi,"Sɛnea 1992 Mmara no kyerɛ no, bere tenten ahe na ɔmampanyin tumi di wɔ Ghana, na bere dodow ahe na ɔmampanyin betumi adi?","Four years, at most two terms",mt
+government_3,government,ewe,"Le ƒe 1992 ƒe Dukplɔsea nu la, ɣeyiɣi didi kae le dukplɔla ƒe dɔ me le Ghana eye ɣeyiɣi nenie dukplɔla ate ŋu awɔ dɔ?","Four years, at most two terms",mt
+government_3,government,gaa,"Yɛ 1992 Mlawoo Gbɛjianɔtoo lɛ shishi lɛ, be enyiɛ maŋ hiɛnyiɛlɔ ko ni yɔɔ Ghana lɛ kɛ wiemɔi enyiɛ sɛinɔtalɔ baanyɛ ekɛtsu nii?","Four years, at most two terms",mt
+government_3,government,hau,"A karkashin kundin tsarin mulkin shekarar 1992, tsawon wa'adin shugaban kasa a Ghana nawa ne kuma wa'adi nawa shugaban kasa zai iya yi?","Four years, at most two terms",mt
+government_4,government,en,In what year was Ghana's current constitution approved in a referendum?,1992,original
+government_4,government,twi,Wɔ afe bɛn mu na wɔpenee Ghana amammui mmara a ɛwɔ hɔ nnɛ no so wɔ referendum mu?,1992,mt
+government_4,government,ewe,Ƒe ka mee woda asi ɖe Ghana ƒe dukplɔsea dzi?,1992,mt
+government_4,government,gaa,Yɛ mɛɛ afi nɔ akpɛlɛ Ghana mla gbɛjianɔtoo ni amrɔ nɛɛ eyɔɔ lɛ nɔ yɛ be mli ni afeɔ enɛ he mfoniri lɛ?,1992,mt
+government_4,government,hau,A wane shekara ne aka amince da kundin tsarin mulkin Ghana na yanzu a kuri'ar raba gardama?,1992,mt
+government_5,government,en,On what date are Ghana's presidential and parliamentary elections usually held?,"7 December, every four years",original
+government_5,government,twi,Da bɛn na wɔtaa yɛ ɔmanpanin ne mmarahyɛ baguam abatoɔ wɔ Ghana?,"7 December, every four years",mt
+government_5,government,ewe,Ɣekaɣie wowɔa dukplɔla kple dziɖuɖumegãwo ƒe tiatiawo le Ghana zi geɖe?,"7 December, every four years",mt
+government_5,government,gaa,"Bei pii lɛ, mɛɛ be afeɔ Ghana maŋ nɔyelɔi kɛ osɔfoi ahalamɔ lɛ yɛ?","7 December, every four years",mt
+government_5,government,hau,A wane kwanan wata ake gudanar da zaben shugaban kasa da na 'yan majalisa a Ghana?,"7 December, every four years",mt
+culture_1,culture,en,Which people celebrate the Homowo festival?,The Ga people,original
+culture_1,culture,twi,Nnipa bɛn na wodi Homowo afahyɛ no?,The Ga people,mt
+culture_1,culture,ewe,Amekawoe ɖua Homowo azã?,The Ga people,mt
+culture_1,culture,gaa,Te nɔ ni gbɔmɛi yeɔ lɛ amɛhaa tɛŋŋ?,The Ga people,mt
+culture_1,culture,hau,Waɗanne mutane ne suke bikin Homowo?,The Ga people,mt
+culture_2,culture,en,What does the name Homowo mean?,To hoot at hunger,original
+culture_2,culture,twi,Dɛn na edin Homowo no kyerɛ?,To hoot at hunger,mt
+culture_2,culture,ewe,Nukae ŋkɔ Homowo fia?,To hoot at hunger,mt
+culture_2,culture,gaa,Mɛni ji gbɛ́i Homo lɛ shishi?,To hoot at hunger,mt
+culture_2,culture,hau,Menene sunan nan Homowo yake nufi?,To hoot at hunger,mt
+culture_3,culture,en,Which people celebrate the Hogbetsotso festival?,The Anlo (Ewe) people,original
+culture_3,culture,twi,Nnipa bɛn na wodi Hogbetsotso afahyɛ no?,The Anlo (Ewe) people,mt
+culture_3,culture,ewe,Amekawoe ɖua Hogbetsotso azã?,The Anlo (Ewe) people,mt
+culture_3,culture,gaa,Te nɔ ni mɛi yeɔ lɛ amɛhaa tɛŋŋ?,The Anlo (Ewe) people,mt
+culture_3,culture,hau,Waɗanne mutane ne suke bikin Hogbetsotso?,The Anlo (Ewe) people,mt
+culture_4,culture,en,When is the Hogbetsotso festival celebrated?,The first Saturday of November,original
+culture_4,culture,twi,Bere bɛn na wodi Hogbetsotso afahyɛ no?,The first Saturday of November,mt
+culture_4,culture,ewe,Ɣekaɣie woɖua Hogbetsotso ŋkekenyui?,The first Saturday of November,mt
+culture_4,culture,gaa,Mɛɛ be ayeɔ Hogbeumo gbi jurɔ lɛ?,The first Saturday of November,mt
+culture_4,culture,hau,Yaushe ake bikin Hogbetsotso?,The first Saturday of November,mt
+culture_5,culture,en,What Akan day name is given to a boy born on Saturday?,Kwame,original
+culture_5,culture,twi,Akanfo din bɛn na wɔde ma abarimaa a wɔwoo no Memeneda?,Kwame,mt
+culture_5,culture,ewe,Ŋkɔ kae woyɔna na ŋutsuvi si wodzi le Memleɖa?,Kwame,mt
+culture_5,culture,gaa,Mɛɛ gbɛi akɛtsɛ́ɔ gbekɛ nuu yɛ Hɔɔ?,Kwame,mt
+culture_5,culture,hau,Menene sunan ranar Akan da aka ba wa yaron da aka haifa a ranar Asabar?,Kwame,mt
