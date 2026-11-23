@@ -1,0 +1,81 @@
+id,topic,lang,question,answer,source
+health_1,health,twi,Ghana tooɔ ne National Health Insurance mmara wɔ afe bɛn mu?,2003 (put into effect in 2004),chatgpt
+health_1,health,gaa,Ghana too National Health Insurance shikpɔŋ lɛ afeiŋ?,2003 (put into effect in 2004),chatgpt
+health_1,health,ewe,Ghana ɖo eƒe National Health Insurance se le ƒe ka me?,2003 (put into effect in 2004),chatgpt
+health_1,health,hau,A wace shekara Ghana ta zartar da dokar inshorar lafiya ta ƙasa?,2003 (put into effect in 2004),chatgpt
+health_2,health,twi,Ghana National Health Insurance no tua awoɔ ho ka?,Yes,chatgpt
+health_2,health,gaa,Ghana National Health Insurance lɛ eba awo hewalɛ?,Yes,chatgpt
+health_2,health,ewe,Ðe Ghana National Health Insurance ɖoa ga ɖe nyɔnuwo ƒe viɖeɖe kɔkɔe ŋu?,Yes,chatgpt
+health_2,health,hau,Shin inshorar lafiya ta ƙasa ta Ghana tana biyan kuɗin kula da mata masu juna biyu?,Yes,chatgpt
+health_3,health,twi,Edin bɛn na wɔde frɛ malaria aduro a Ghana fii ase de maa mmofra wɔ 2019 mu?,"RTS,S",chatgpt
+health_3,health,gaa,Maŋŋ ni Ghana ba malaria aduro lɛ he ni wɔhe biilɛwo naa 2019?,"RTS,S",chatgpt
+health_3,health,ewe,Nu ka ŋkɔe wònɔna malaria atike si Ghana dze ɖeviwo dzi be wòawɔ dɔ le 2019 me?,"RTS,S",chatgpt
+health_3,health,hau,Mene ne sunan allurar rigakafin zazzabin cizon sauro da Ghana ta fara bai wa yara a 2019?,"RTS,S",chatgpt
+health_4,health,twi,Ghana fii ase de malaria aduro no mae wɔ ne pilot programme no mu wɔ bosome ne afe bɛn mu?,April 2019,chatgpt
+health_4,health,gaa,Ghana hee malaria aduro lɛ wɔ pilot programme lɛ ni afiŋ ni bosome ni?,April 2019,chatgpt
+health_4,health,ewe,Ghana ɖe asi ŋu be yeatsɔ malaria atike la na ɖeviwo le eƒe pilot programme me le ɣleti kple ƒe ka me?,April 2019,chatgpt
+health_4,health,hau,A wane wata kuma a wace shekara Ghana ta fara bayar da allurar rigakafin zazzabin cizon sauro a shirin gwajinta?,April 2019,chatgpt
+health_5,health,twi,"Nsaase mmiɛnsa bɛn na wɔyɛɛ RTS,S malaria aduro no sɔhwɛ wɔ wɔn so?","Ghana, Kenya and Malawi",chatgpt
+health_5,health,gaa,"Mani etɛ ni wɔyɛ RTS,S malaria aduro lɛ sɔhwɛ wɔɔ?","Ghana, Kenya and Malawi",chatgpt
+health_5,health,ewe,"Anyigba etɔ̃ kae wɔwɔ RTS,S malaria atike la ƒe kpɔɖeŋu?","Ghana, Kenya and Malawi",chatgpt
+health_5,health,hau,"Waɗanne ƙasashe uku ne suka gwada allurar rigakafin zazzabin cizon sauro ta RTS,S?","Ghana, Kenya and Malawi",chatgpt
+money_1,money,twi,E-levy da so ara wɔgye wɔ Ghana mobile money transfers ho?,"No, it was repealed from 2 April 2025",chatgpt
+money_1,money,gaa,E-levy lɛ daŋŋ wɔtsɔɔ he wɔ Ghana mobile money transfers lɛ he?,"No, it was repealed from 2 April 2025",chatgpt
+money_1,money,ewe,Ðe wole E-levy la xɔm ɖe mobile money transfers ŋu le Ghana fifia?,"No, it was repealed from 2 April 2025",chatgpt
+money_1,money,hau,Shin har yanzu ana karɓar E-levy kan tura kuɗin mobile money a Ghana?,"No, it was repealed from 2 April 2025",chatgpt
+money_2,money,twi,E-levy no na na ɛyɛ sika dodow sɛn wɔ electronic transfers ho ansa na wɔregyae no?,1%,chatgpt
+money_2,money,gaa,E-levy lɛ hɛ sika ni eba electronic transfers he nɛ wɔtsɔɔ ni wɔtsɔɔ he?,1%,chatgpt
+money_2,money,ewe,E-levy la ƒe ɖoɖo nye ga home nenie le electronic transfers ŋu hafi wotu eŋu?,1%,chatgpt
+money_2,money,hau,Nawa ne adadin E-levy da ake karɓa kan tura kuɗaɗen lantarki kafin a soke shi?,1%,chatgpt
+money_3,money,twi,Pesewas sɛn na ɛyɛ Ghana cedi baako?,100,chatgpt
+money_3,money,gaa,Pesewas etɛ ni eba Ghana cedi kome?,100,chatgpt
+money_3,money,ewe,Pesewas neniee nye Ghana cedi ɖeka?,100,chatgpt
+money_3,money,hau,Pesewas nawa ne ke da Ghana cedi ɗaya?,100,chatgpt
+money_4,money,twi,SSNIT kyerɛ dɛn?,Social Security and National Insurance Trust,chatgpt
+money_4,money,gaa,SSNIT lɛ hewɔ ni?,Social Security and National Insurance Trust,chatgpt
+money_4,money,ewe,Nu ka SSNIT gɔme ɖe?,Social Security and National Insurance Trust,chatgpt
+money_4,money,hau,Menene cikakken ma'anar SSNIT?,Social Security and National Insurance Trust,chatgpt
+money_5,money,twi,SSNIT sii hɔ afe bɛn?,1972,chatgpt
+money_5,money,gaa,SSNIT wɔhe afeiŋ?,1972,chatgpt
+money_5,money,ewe,SSNIT ɖo anyi le ƒe ka me?,1972,chatgpt
+money_5,money,hau,A wace shekara aka kafa SSNIT?,1972,chatgpt
+government_1,government,twi,Ghana wɔ regions dodow sɛn?,16,chatgpt
+government_1,government,gaa,Ghana wɔ regions niŋ ni?,16,chatgpt
+government_1,government,ewe,Ghana ŋu duƒe geɖe nenie li?,16,chatgpt
+government_1,government,hau,Ghana tana da yankuna nawa?,16,chatgpt
+government_2,government,twi,Mfeɛ a ɛsua koraa a ɛsɛ sɛ obi adi ansa na watumi ato aba wɔ Ghana yɛ sɛn?,18,chatgpt
+government_2,government,gaa,Ghana eŋŋ ni afiŋ ni akɛ ni amɛ hee akɛ wɔto aba?,18,chatgpt
+government_2,government,ewe,Ɖevi ƒe ɖeɖe si le Ghana be ame ate ŋu ato aba nye nenie?,18,chatgpt
+government_2,government,hau,Shekara nawa ne mafi ƙaranci da mutum zai kai kafin ya sami damar zaɓe a Ghana?,18,chatgpt
+government_3,government,twi,"Sɛ yɛhwɛ 1992 Constitution a, Ghana ɔmanpanyin tumidi di mfeɛ sɛn na ɔbɛtumi adi mfeɛ dodow sɛn?","Four years, at most two terms",chatgpt
+government_3,government,gaa,"1992 Constitution lɛ he ni, Ghana president lɛ ehaŋ afeiŋ ni, eba akɛ wɔhaŋ ni?","Four years, at most two terms",chatgpt
+government_3,government,ewe,"Le 1992 Constitution nu la, ƒe neniee nye Ghana ƒe ŋgɔla ƒe ɖoɖo, eye wòate ŋu azɔ ɖoɖo nenie?","Four years, at most two terms",chatgpt
+government_3,government,hau,"Bisa ga wa'adadin shekaru nawa ne wa'adin shugaban ƙasar Ghana, kuma wa'adin sau nawa ne zai iya yi a ƙarƙashin Kundin Tsarin Mulki na 1992?","Four years, at most two terms",chatgpt
+government_4,government,twi,"Ghana amammu mmara a yɛde di dwuma seesei no, afe bɛn mu na ɔmanfoɔ penee so wɔ referendum mu?",1992,chatgpt
+government_4,government,gaa,"Ghana Constitution si wɔhe wɔɔ afei ni, wɔhaŋ afiŋ ni wɔreferendum lɛ he?",1992,chatgpt
+government_4,government,ewe,Le ƒe ka me wɔ Ghana ƒe Constitution si le zã fifia la ɖo go le referendum me?,1992,chatgpt
+government_4,government,hau,A wace shekara aka amince da kundin tsarin mulkin Ghana na yanzu ta hanyar kuri'ar raba gardama?,1992,chatgpt
+government_5,government,twi,Ghana ɔmanpanyin ne mmarahyɛbagua abatow no taa kɔ so wɔ da bɛn?,"7 December, every four years",chatgpt
+government_5,government,gaa,Ghana president kple parliament aba lɛ wɔɔ wɔ daŋŋ?,"7 December, every four years",chatgpt
+government_5,government,ewe,Ɣekaɣi ka wòwɔna be woatu Ghana ƒe ŋgɔla kple parliament ƒe abato le ɣleti me?,"7 December, every four years",chatgpt
+government_5,government,hau,A wace rana ake yawan gudanar da zaɓen shugaban ƙasa da na 'yan majalisa a Ghana?,"7 December, every four years",chatgpt
+culture_1,culture,twi,Nnipa bɛn na wɔdi Homowo afahyɛ no?,The Ga people,chatgpt
+culture_1,culture,gaa,Amɛ niŋ ni wɔyɛ Homowo festival lɛ?,The Ga people,chatgpt
+culture_1,culture,ewe,Ame ka amewo doa Homowo ŋkekenyui?,The Ga people,chatgpt
+culture_1,culture,hau,Waɗanne mutane ne suke bikin Homowo?,The Ga people,chatgpt
+culture_2,culture,twi,Homowo din no kyerɛ dɛn?,To hoot at hunger,chatgpt
+culture_2,culture,gaa,Homowo lɛ hewɔ ni?,To hoot at hunger,chatgpt
+culture_2,culture,ewe,Nu ka ŋkɔ Homowo gɔme ɖe?,To hoot at hunger,chatgpt
+culture_2,culture,hau,Menene ma'anar sunan Homowo?,To hoot at hunger,chatgpt
+culture_3,culture,twi,Nnipa bɛn na wɔdi Hogbetsotso afahyɛ no?,The Anlo (Ewe) people,chatgpt
+culture_3,culture,gaa,Amɛ niŋ ni wɔyɛ Hogbetsotso festival lɛ?,The Anlo (Ewe) people,chatgpt
+culture_3,culture,ewe,Ame ka amewo doa Hogbetsotso ŋkekenyui?,The Anlo (Ewe) people,chatgpt
+culture_3,culture,hau,Waɗanne mutane ne suke bikin Hogbetsotso?,The Anlo (Ewe) people,chatgpt
+culture_4,culture,twi,Hogbetsotso afahyɛ no di wɔ bosome bɛn mu?,The first Saturday of November,chatgpt
+culture_4,culture,gaa,Hogbetsotso festival lɛ wɔɔ bosome ni?,The first Saturday of November,chatgpt
+culture_4,culture,ewe,Ɣleti ka me wodoa Hogbetsotso ŋkekenyui?,The first Saturday of November,chatgpt
+culture_4,culture,hau,A wane wata ake bikin Hogbetsotso?,The first Saturday of November,chatgpt
+culture_5,culture,twi,Akan da din bɛn na wɔde ma abarimaa a wɔwoo no Memeneda?,Kwame,chatgpt
+culture_5,culture,gaa,Akan heŋŋ ni wɔtsɔɔ bi ni wɔji wɔ Memeneda?,Kwame,chatgpt
+culture_5,culture,ewe,Akan ƒe ŋkɔ ka wòna ŋutsuvi si dzi le Memleɖa?,Kwame,chatgpt
+culture_5,culture,hau,Wane ne sunan ranar haihuwar Akan da ake ba wa yaro namiji da aka haifa ranar Asabar?,Kwame,chatgpt
