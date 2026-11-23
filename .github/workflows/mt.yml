@@ -13,6 +13,7 @@ jobs:
       shards: ${{ steps.r.outputs.shards }}
       n: ${{ steps.r.outputs.n }}
       tag: ${{ steps.r.outputs.tag }}
+      extra: ${{ steps.r.outputs.extra }}
     steps:
       - uses: actions/checkout@v4
       - id: r
@@ -22,6 +23,7 @@ jobs:
           echo "shards=$(jq -c '[range(0; .shards)]' $f)" >> $GITHUB_OUTPUT
           echo "n=$(jq -r .shards $f)" >> $GITHUB_OUTPUT
           echo "tag=$(jq -r .tag $f)" >> $GITHUB_OUTPUT
+          echo "extra=$(jq -r '.extra_preds // ""' $f)" >> $GITHUB_OUTPUT
   run:
     needs: request
     runs-on: ubuntu-latest
@@ -61,7 +63,7 @@ jobs:
           pattern: preds-*
           path: preds
           merge-multiple: true
-      - run: PYTHONPATH=src python -m kasa.bench_mt report --data data/mt --preds preds --out results/mt_${{ needs.request.outputs.tag }}
+      - run: PYTHONPATH=src python -m kasa.bench_mt report --data data/mt --preds preds --out results/mt_${{ needs.request.outputs.tag }} ${{ needs.request.outputs.extra && format('--extra-preds {0}', needs.request.outputs.extra) || '' }}
       - name: Commit
         run: |
           git config user.name "Sam Boateng"

@@ -87,9 +87,12 @@ def bootstrap_chrf(hyps, refs, n=300, seed=42):
     return float(np.percentile(vals, 2.5)), float(np.percentile(vals, 97.5))
 
 
-def report(data: Path, preds: Path, out: Path) -> None:
+def report(data: Path, preds: Path, out: Path, extra_preds: list[Path] | None = None) -> None:
     df = load_sets(data).set_index("id")
-    p = pd.concat([pd.read_parquet(f) for f in sorted(preds.glob("*.parquet"))], ignore_index=True)
+    parts = [pd.read_parquet(f) for f in sorted(preds.glob("*.parquet"))]
+    for extra in extra_preds or []:
+        parts.append(pd.read_parquet(extra))
+    p = pd.concat(parts, ignore_index=True).drop_duplicates(["model", "id", "direction"], keep="last")
     rows = []
     for (model, st, lang, direction), g in p.groupby(["model", "set", "lang", "direction"]):
         ref_col = "local" if direction.startswith("en>") else "en"
@@ -143,11 +146,12 @@ def main() -> None:
     b.add_argument("--data", type=Path, required=True)
     b.add_argument("--preds", type=Path, required=True)
     b.add_argument("--out", type=Path, required=True)
+    b.add_argument("--extra-preds", type=Path, nargs="*", default=[])
     x = ap.parse_args()
     if x.cmd == "run":
         run(x.model, x.data, x.out, x.shard, x.n_shards)
     else:
-        report(x.data, x.preds, x.out)
+        report(x.data, x.preds, x.out, x.extra_preds)
 
 
 if __name__ == "__main__":

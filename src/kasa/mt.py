@@ -48,11 +48,11 @@ class Model:
 
 
 class NLLB_(Model):
-    def __init__(self, name: str, hub_id: str, beams: int = 4, codes: dict | None = None, only: set | None = None):
+    def __init__(self, name: str, hub_id: str, beams: int = 4, codes: dict | None = None, only: set | None = None, tokenizer_id: str | None = None):
         from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
         self.name, self.beams, self.codes, self.only = name, beams, codes or NLLB, only
-        self.tok = AutoTokenizer.from_pretrained(hub_id)
+        self.tok = AutoTokenizer.from_pretrained(tokenizer_id or hub_id)
         self.model = AutoModelForSeq2SeqLM.from_pretrained(hub_id).eval()
 
     def supports(self, src, tgt):
@@ -139,7 +139,8 @@ def load(name: str) -> Model:
         return NLLB_(name, SPECS[name])
     if name == "glossmt_nllb_1.3b":
         # fine-tuned on English to Twi only
-        return NLLB_(name, SPECS[name], codes={"en": "eng_Latn", "twi": "twi_Latn"}, only={("en", "twi")})
+        return NLLB_(name, SPECS[name], codes={"en": "eng_Latn", "twi": "twi_Latn"}, only={("en", "twi")}, tokenizer_id=SPECS["nllb_1.3b"])
+        # its saved tokenizer config needs transformers 5; the vocabulary is the base model's
     if name == "opus_mt":
         return Opus()
     if name == "madlad_3b":
