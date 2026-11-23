@@ -14,12 +14,20 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install pandas pyarrow huggingface_hub
-      - run: PYTHONPATH=src python -m kasa.data --out data/mt
+      - name: Translation test sets
+        if: ${{ !contains(github.event.head_commit.message, '[make-mt]') }}
+        run: PYTHONPATH=src python -m kasa.data --out data/mt
+      - name: Machine translated questions (stand in for human ones)
+        if: ${{ contains(github.event.head_commit.message, '[make-mt]') }}
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install "transformers>=4.48,<5" sentencepiece sacremoses protobuf numpy
+          PYTHONPATH=src python -m kasa.e2e make-mt --questions data/qa/questions_en.csv --out data/qa/questions_mt.csv
       - name: Commit
         run: |
           git config user.name "Sam Boateng"
           git config user.email "32736261+Boatengs@users.noreply.github.com"
           git add data
-          git commit -m "Translation test sets"
+          git commit -m "Test data"
           git pull --rebase origin work
           git push origin HEAD:work
