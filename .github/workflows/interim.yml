@@ -16,14 +16,16 @@ jobs:
           python-version: "3.11"
       - run: pip install pandas pyarrow sacrebleu numpy
       - id: r
-        run: echo "run=$(jq -r .run_id .github/requests/interim.json)" >> $GITHUB_OUTPUT; echo "tag=$(jq -r .tag .github/requests/interim.json)" >> $GITHUB_OUTPUT
-      - uses: actions/download-artifact@v4
-        with:
-          pattern: preds-*
-          path: preds
-          merge-multiple: true
-          run-id: ${{ steps.r.outputs.run }}
-          github-token: ${{ github.token }}
+        run: echo "tag=$(jq -r .tag .github/requests/interim.json)" >> $GITHUB_OUTPUT
+      - name: Download predictions from each run
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p preds
+          for id in $(jq -r '.run_ids[]' .github/requests/interim.json); do
+            gh run download $id -R ${{ github.repository }} -p 'preds-*' -D dl_$id || true
+            find dl_$id -name '*.parquet' -exec cp {} preds/ \;
+          done
       - run: ls preds; PYTHONPATH=src python -m kasa.bench_mt report --data data/mt --preds preds --out results/mt_${{ steps.r.outputs.tag }}
       - name: Commit
         run: |

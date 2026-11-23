@@ -23,10 +23,11 @@ from .wiki import Passage, Wikipedia
 
 ROOT = Path(__file__).resolve().parents[2]
 LANG_NAMES = {"en": "English", "twi": "Twi (Akan)", "gaa": "Ga", "ewe": "Ewe", "hau": "Hausa"}
-# best model per direction on the translation benchmark (results/mt_*); Ga has only OPUS-MT
+# best model per direction on the translation benchmark (results/mt_*); Ga has only OPUS-MT.
+# English to Twi uses GhanaNLP's gloss-mt NLLB 1.3B, which beat plain NLLB 1.3B on FLORES (38.7 vs 37.4 chrF++)
 ROUTES = {
     ("twi", "en"): "nllb_1.3b",
-    ("en", "twi"): "nllb_1.3b",
+    ("en", "twi"): "glossmt_nllb_1.3b",
     ("ewe", "en"): "nllb_1.3b",
     ("en", "ewe"): "nllb_1.3b",
     ("hau", "en"): "nllb_1.3b",
