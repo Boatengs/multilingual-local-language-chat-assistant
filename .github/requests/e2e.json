@@ -1,1 +1,1 @@
-{"questions": "data/qa/questions_mt.csv", "shards": 4, "tag": "mt_inputs"}
+{"questions": "data/qa/questions_mt.csv", "shards": 4, "tag": "mt_inputs_kb", "kb": ["none", "official", "official+question_sources"]}
