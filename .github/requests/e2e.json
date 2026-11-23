@@ -1,1 +1,1 @@
-{"questions": "data/qa/questions_gpt.csv", "shards": 4, "tag": "gpt_inputs_kb", "kb": ["none", "official", "official+question_sources"]}
+{"questions": "data/qa/questions_revised.csv", "shards": 4, "tag": "revised_inputs_kb", "kb": ["none", "official", "official+question_sources"]}

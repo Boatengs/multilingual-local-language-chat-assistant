@@ -1,0 +1,61 @@
+id,topic,lang,question,answer,source
+health_1,health,twi,Afe bɛn mu na Ghana hyɛɛ National Health Insurance mmara no?,2003 (put into effect in 2004),revised
+health_1,health,ewe,Ƒe ka me Ghana ɖo National Health Insurance se la?,2003 (put into effect in 2004),revised
+health_1,health,hau,A wace shekara Ghana ta zartar da dokar inshorar lafiya ta ƙasa?,2003 (put into effect in 2004),revised
+health_2,health,twi,Ghana National Health Insurance no tua nyinsɛn ne awoɔ ho ka anaa?,Yes,revised
+health_2,health,ewe,Ðe Ghana ƒe National Health Insurance xea fe ɖe fufɔfɔ kple vidzidzi ŋuti dɔyɔyɔ ta?,Yes,revised
+health_2,health,hau,Shin inshorar lafiya ta ƙasa ta Ghana tana biyan kuɗin kula da mata masu juna biyu?,Yes,revised
+health_3,health,twi,Malaria ho bammɔ panee a Ghana fii ase de maa mmofra wɔ 2019 mu no din de sɛn?,"RTS,S",revised
+health_3,health,ewe,Ŋkɔ ka nye malaria dɔxeɖetike (vaccine) si Ghana de asi nana ɖeviwo le ƒe 2019 me?,"RTS,S",revised
+health_3,health,hau,Mene ne sunan allurar rigakafin zazzaɓin cizon sauro da Ghana ta fara bai wa yara a 2019?,"RTS,S",revised
+health_4,health,twi,Bosome ne afe bɛn mu na Ghana fii ase de malaria ho bammɔ panee no maa nnipa wɔ ne pilot programme no mu?,April 2019,revised
+health_4,health,ewe,Ɣleti kple ƒe ka me Ghana de asi malaria dɔxeɖetike la nana le eƒe pilot programme me?,April 2019,revised
+health_4,health,hau,A wane wata kuma a wace shekara Ghana ta fara bayar da allurar rigakafin zazzaɓin cizon sauro a shirin gwajinta?,April 2019,revised
+health_5,health,twi,"Aman mmiɛnsa bɛn mu na wɔsɔɔ RTS,S malaria ho bammɔ panee no hwɛe?","Ghana, Kenya and Malawi",revised
+health_5,health,ewe,"Dukɔ etɔ̃ kawo me wowɔ RTS,S malaria dɔxeɖetike la ƒe dodokpɔ le?","Ghana, Kenya and Malawi",revised
+health_5,health,hau,"Waɗanne ƙasashe uku ne suka gwada allurar rigakafin zazzaɓin cizon sauro ta RTS,S?","Ghana, Kenya and Malawi",revised
+money_1,money,twi,Wɔda so gye E-levy wɔ mobile money transfers so wɔ Ghana anaa?,"No, it was repealed from 2 April 2025",revised
+money_1,money,ewe,Ðe wogale E-levy xɔm ɖe mobile money transfers ŋu le Ghana fifia?,"No, it was repealed from 2 April 2025",revised
+money_1,money,hau,Shin har yanzu ana karɓar E-levy kan tura kuɗin mobile money a Ghana?,"No, it was repealed from 2 April 2025",revised
+money_2,money,twi,"Bere a na wɔgye E-levy no, na ɛyɛ ɔha mu nkyɛmu sɛn wɔ electronic transfers so?",1%,revised
+money_2,money,ewe,Alafa me nenie E-levy la nɔ ɖe electronic transfers ŋu hafi woɖe eɖa?,1%,revised
+money_2,money,hau,Kashi nawa ne E-levy ake karɓa a kan tura kuɗi ta hanyar lantarki kafin a soke shi?,1%,revised
+money_3,money,twi,Pesewa ahe na ɛyɛ Ghana sidi baako?,100,revised
+money_3,money,ewe,Pesewa nenie wɔa Ghana sidi ɖeka?,100,revised
+money_3,money,hau,Pesewa nawa ne suke yin sidi ɗaya na Ghana?,100,revised
+money_4,money,twi,Dɛn na SSNIT gyina hɔ ma?,Social Security and National Insurance Trust,revised
+money_4,money,ewe,Nu kae SSNIT fia?,Social Security and National Insurance Trust,revised
+money_4,money,hau,Mene ne cikakken sunan SSNIT?,Social Security and National Insurance Trust,revised
+money_5,money,twi,Afe bɛn mu na wɔde SSNIT sii hɔ?,1972,revised
+money_5,money,ewe,Ƒe ka me woɖo SSNIT anyi?,1972,revised
+money_5,money,hau,A wace shekara aka kafa SSNIT?,1972,revised
+government_1,government,twi,Mantam ahe na ɛwɔ Ghana?,16,revised
+government_1,government,ewe,Nutome nenie le Ghana?,16,revised
+government_1,government,hau,Ghana tana da yankuna nawa?,16,revised
+government_2,government,twi,Mfeɛ a ɛsua koraa a ɛsɛ sɛ obi adi ansa na watumi ato aba wɔ Ghana yɛ sɛn?,18,revised
+government_2,government,ewe,Ƒe nenie wòle be ame naxɔ hafi wòate ŋu ada akɔ le Ghana?,18,revised
+government_2,government,hau,Shekara nawa ne mafi ƙaranci da mutum zai kai kafin ya sami damar zaɓe a Ghana?,18,revised
+government_3,government,twi,"Sɛnea 1992 Constitution no te no, Ghana ɔmanpanyin bere baako yɛ mfeɛ ahe, na mprɛ ahe na ɔbɛtumi adi bere no?","Four years, at most two terms",revised
+government_3,government,ewe,"Le 1992 Constitution la nu, ƒe nenie Ghana dukplɔla ƒe ɣeyiɣi ɖeka xɔna, eye ɣeyiɣi nenie wòate ŋu anɔ zi dzi?","Four years, at most two terms",revised
+government_3,government,hau,"Bisa ga Kundin Tsarin Mulki na 1992, shekara nawa ne wa'adin shugaban ƙasar Ghana, kuma wa'adi nawa ne zai iya yi?","Four years, at most two terms",revised
+government_4,government,twi,"Ghana amammu mmara a yɛde di dwuma seesei no, afe bɛn mu na ɔmanfoɔ penee so wɔ referendum mu?",1992,revised
+government_4,government,ewe,Ƒe ka me Ghanatɔwo da akɔ le referendum me tsɔ lɔ̃ ɖe Constitution si le zãzã me fifia la dzi?,1992,revised
+government_4,government,hau,A wace shekara aka amince da kundin tsarin mulkin Ghana na yanzu ta hanyar ƙuri'ar raba gardama?,1992,revised
+government_5,government,twi,Da bɛn na wɔtaa to Ghana ɔmanpanyin ne mmarahyɛbagua aba?,"7 December, every four years",revised
+government_5,government,ewe,Ŋkeke ka dzie wowɔa Ghana dukplɔla kple Parliament ƒe akɔdada zi geɖe?,"7 December, every four years",revised
+government_5,government,hau,A wace rana ake yawan gudanar da zaɓen shugaban ƙasa da na 'yan majalisar dokoki a Ghana?,"7 December, every four years",revised
+culture_1,culture,twi,Nnipa bɛn na wɔdi Homowo afahyɛ no?,The Ga people,revised
+culture_1,culture,ewe,Ame kawoe ɖua Homowo ŋkekenyui?,The Ga people,revised
+culture_1,culture,hau,Waɗanne mutane ne suke bikin Homowo?,The Ga people,revised
+culture_2,culture,twi,Homowo din no kyerɛ dɛn?,To hoot at hunger,revised
+culture_2,culture,ewe,Nu kae ŋkɔ Homowo fia?,To hoot at hunger,revised
+culture_2,culture,hau,Mene ne ma'anar sunan Homowo?,To hoot at hunger,revised
+culture_3,culture,twi,Nnipa bɛn na wɔdi Hogbetsotso afahyɛ no?,The Anlo (Ewe) people,revised
+culture_3,culture,ewe,Ame kawoe ɖua Hogbetsotso ŋkekenyui?,The Anlo (Ewe) people,revised
+culture_3,culture,hau,Waɗanne mutane ne suke bikin Hogbetsotso?,The Anlo (Ewe) people,revised
+culture_4,culture,twi,Bosome bɛn mu na wɔdi Hogbetsotso afahyɛ no?,The first Saturday of November,revised
+culture_4,culture,ewe,Ɣleti ka me woɖua Hogbetsotso ŋkekenyui?,The first Saturday of November,revised
+culture_4,culture,hau,A wane wata ake bikin Hogbetsotso?,The first Saturday of November,revised
+culture_5,culture,twi,Akan da din bɛn na wɔde ma abarimaa a wɔwoo no Memeneda?,Kwame,revised
+culture_5,culture,ewe,Akan ŋkeke ŋkɔ ka wotsɔna naa ŋutsuvi si wodzi le Memleɖa?,Kwame,revised
+culture_5,culture,hau,Wane ne sunan ranar haihuwar Akan da ake ba wa yaro namiji da aka haifa ranar Asabar?,Kwame,revised
