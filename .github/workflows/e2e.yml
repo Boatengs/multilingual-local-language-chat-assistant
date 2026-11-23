@@ -16,6 +16,7 @@ jobs:
       n: ${{ steps.r.outputs.n }}
       tag: ${{ steps.r.outputs.tag }}
       questions: ${{ steps.r.outputs.questions }}
+      kb: ${{ steps.r.outputs.kb }}
     steps:
       - uses: actions/checkout@v4
       - id: r
@@ -25,6 +26,7 @@ jobs:
           echo "n=$(jq -r .shards $f)" >> $GITHUB_OUTPUT
           echo "tag=$(jq -r .tag $f)" >> $GITHUB_OUTPUT
           echo "questions=$(jq -r .questions $f)" >> $GITHUB_OUTPUT
+          echo "kb=$(jq -c '.kb // ["none"]' $f)" >> $GITHUB_OUTPUT
   run:
     needs: request
     runs-on: ubuntu-latest
@@ -33,6 +35,7 @@ jobs:
       fail-fast: false
       matrix:
         shard: ${{ fromJson(needs.request.outputs.shards) }}
+        kb: ${{ fromJson(needs.request.outputs.kb) }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -63,18 +66,18 @@ jobs:
         run: |
           export LD_LIBRARY_PATH=$PWD/llamabin:$LD_LIBRARY_PATH
           llamabin/llama-server -m models/gen.gguf -c 8192 -t 4 --port 8080 --log-disable > gen.log 2>&1 &
-          PYTHONPATH=src python -m kasa.e2e answer --questions ${{ needs.request.outputs.questions }} --out out --shard ${{ matrix.shard }} --n-shards ${{ needs.request.outputs.n }}
+          PYTHONPATH=src python -m kasa.e2e answer --questions ${{ needs.request.outputs.questions }} --out out/${{ matrix.kb }} --shard ${{ matrix.shard }} --n-shards ${{ needs.request.outputs.n }} --kb ${{ matrix.kb }}
           kill %1 || true
       - name: Grade
         run: |
           export LD_LIBRARY_PATH=$PWD/llamabin:$LD_LIBRARY_PATH
           llamabin/llama-server -m models/judge.gguf -c 8192 -t 4 --port 8081 --log-disable > judge.log 2>&1 &
-          PYTHONPATH=src python -m kasa.e2e grade --answers out/answers_${{ matrix.shard }}.jsonl --out out
+          PYTHONPATH=src python -m kasa.e2e grade --answers out/${{ matrix.kb }}/answers_${{ matrix.shard }}.jsonl --out out/${{ matrix.kb }}
           kill %1 || true
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: e2e-${{ matrix.shard }}
+          name: e2e-${{ matrix.kb }}-${{ matrix.shard }}
           path: out/
   collect:
     needs: [request, run]

@@ -40,9 +40,12 @@ class Passage:
     section: str
     text: str
     revid: int
+    source_url: str = ""  # set for pages outside Wikipedia
 
     @property
     def url(self) -> str:
+        if self.source_url:
+            return self.source_url
         return "https://en.wikipedia.org/wiki/" + self.title.replace(" ", "_")
 
     def render(self) -> str:

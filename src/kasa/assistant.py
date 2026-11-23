@@ -137,7 +137,7 @@ def _rerank():
     return _enc["r"]
 
 
-def retrieve(llm: LlamaServer, wiki: Wikipedia, question: str, pages: int = 6, top: int = 6) -> tuple[list[tuple[Passage, float]], dict]:
+def retrieve(llm: LlamaServer, wiki: Wikipedia, question: str, pages: int = 6, top: int = 6, kb=None) -> tuple[list[tuple[Passage, float]], dict]:
     q = llm.chat(QUERY_PROMPT.format(question=question), temperature=0.0, max_tokens=24)["text"]
     query = re.sub(r'^(query:\s*)|["\']', "", (q.strip().splitlines() or [""])[0], flags=re.I).strip()[:120]
     titles: list[str] = []
@@ -148,10 +148,16 @@ def retrieve(llm: LlamaServer, wiki: Wikipedia, question: str, pages: int = 6, t
                     titles.append(t)
     titles = titles[:pages]
     passages = [p for t in titles for p in wiki.page(t)]
-    if not passages:
+    kb_items = kb.items if kb is not None else []
+    if not passages and not kb_items:
         return [], {"query": query, "titles": titles}
+    pv_wiki = _embed().encode([p.render() for p in passages], batch_size=64) if passages else np.zeros((0, 384))
+    if kb_items:
+        passages = passages + kb_items
+        pv = np.vstack([pv_wiki, kb.vectors(_embed().encode)])
+    else:
+        pv = pv_wiki
     texts = [p.render() for p in passages]
-    pv = _embed().encode(texts, batch_size=64)
     qv = _embed().encode([question])[0]
     sims = pv @ qv / (np.linalg.norm(pv, axis=1) * np.linalg.norm(qv) + 1e-9)
     cand = np.argsort(-sims)[:40]
@@ -161,8 +167,8 @@ def retrieve(llm: LlamaServer, wiki: Wikipedia, question: str, pages: int = 6, t
 
 
 class Assistant:
-    def __init__(self, llm: LlamaServer, wiki: Wikipedia, translator: Translator | None = None, glossary: list[Term] | None = None):
-        self.llm, self.wiki = llm, wiki
+    def __init__(self, llm: LlamaServer, wiki: Wikipedia, translator: Translator | None = None, glossary: list[Term] | None = None, kb=None):
+        self.llm, self.wiki, self.kb = llm, wiki, kb
         self.translate = translator or Translator()
         self.glossary = load_glossary() if glossary is None else glossary
 
@@ -170,7 +176,7 @@ class Assistant:
         t0 = time.time()
         q_en = self.translate(localize_terms(question, lang, self.glossary), lang, "en") if lang != "en" else question
         t1 = time.time()
-        ranked, info = retrieve(self.llm, self.wiki, q_en)
+        ranked, info = retrieve(self.llm, self.wiki, q_en, kb=self.kb)
         if ranked:
             block = "\n\n".join(f"[{i + 1}] {p.render()}" for i, (p, _) in enumerate(ranked))
             answer_en = self.llm.chat(ANSWER_PROMPT.format(passages=block, question=q_en), temperature=0.0, max_tokens=160)["text"]

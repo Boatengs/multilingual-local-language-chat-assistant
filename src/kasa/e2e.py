@@ -41,8 +41,9 @@ def make_mt(questions: Path, out: Path, langs=("twi", "ewe", "gaa", "hau")) -> N
         w.writerows(rows)
 
 
-def answer(questions: Path, out: Path, shard: int, n_shards: int, llm_url: str, cache: Path) -> None:
+def answer(questions: Path, out: Path, shard: int, n_shards: int, llm_url: str, cache: Path, kb_mode: str = "none") -> None:
     from .assistant import Assistant
+    from .kb import KB
     from .wiki import Wikipedia
 
     rows = read_csv(questions)[shard::n_shards]
@@ -51,7 +52,8 @@ def answer(questions: Path, out: Path, shard: int, n_shards: int, llm_url: str, 
     done = {json.loads(x)["key"] for x in path.read_text().splitlines()} if path.exists() else set()
     llm = LlamaServer(llm_url)
     llm.wait()
-    bot = Assistant(llm, Wikipedia(cache_dir=cache))
+    kb = None if kb_mode == "none" else KB(include_question_sources=(kb_mode == "official+question_sources"))
+    bot = Assistant(llm, Wikipedia(cache_dir=cache), kb=kb)
     with path.open("a") as f:
         for r in rows:
             key = f"{r['id']}|{r['lang']}|{r['source']}"
@@ -102,6 +104,7 @@ def main() -> None:
     b.add_argument("--n-shards", type=int, default=1)
     b.add_argument("--llm", default="http://127.0.0.1:8080")
     b.add_argument("--cache", type=Path, default=Path("wikicache"))
+    b.add_argument("--kb", default="none", choices=["none", "official", "official+question_sources"])
     c = sub.add_parser("grade")
     c.add_argument("--answers", type=Path, required=True)
     c.add_argument("--out", type=Path, required=True)
@@ -111,7 +114,7 @@ def main() -> None:
     if x.cmd == "make-mt":
         make_mt(x.questions, x.out)
     elif x.cmd == "answer":
-        answer(x.questions, x.out, x.shard, x.n_shards, x.llm, x.cache)
+        answer(x.questions, x.out, x.shard, x.n_shards, x.llm, x.cache, x.kb)
     else:
         grade(x.answers, x.out, x.llm, x.questions_en)
 
