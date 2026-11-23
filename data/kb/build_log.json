@@ -1,0 +1,119 @@
+{
+ "fetched_on": "2026-11-23",
+ "pages": [
+  {
+   "url": "https://nhis.gov.gh/faqs",
+   "status": 200,
+   "passages": 0
+  },
+  {
+   "url": "https://nhis.gov.gh/membership",
+   "status": 200,
+   "passages": 0
+  },
+  {
+   "url": "https://nia.gov.gh/faqs/",
+   "status": 200,
+   "passages": 54
+  },
+  {
+   "url": "https://nia.gov.gh/?p=494",
+   "status": 200,
+   "passages": 0
+  },
+  {
+   "url": "https://ec.gov.gh/registration/",
+   "status": 200,
+   "passages": 0
+  },
+  {
+   "url": "https://ec.gov.gh/?p=128",
+   "status": 200,
+   "passages": 0
+  },
+  {
+   "url": "https://gra.gov.gh/e-levy",
+   "error": "HTTPError: 404 Client Error: Not Found for url: https://gra.gov.gh/e-levy"
+  },
+  {
+   "url": "https://www.graphic.com.gh/news/general-news/ghana-news-gra-assures-refund-of-e-levy-deductions-after-abolition.html",
+   "status": 200,
+   "passages": 18
+  },
+  {
+   "url": "https://www.myjoyonline.com/no-more-e-levy-effective-immediately-gra-orders-compliance-with-tax-abolition/",
+   "status": 200,
+   "passages": 9
+  },
+  {
+   "url": "https://ssa.gov/policy/docs/progdesc/ssptw/2006-2007/africa/ghana.pdf",
+   "error": "SSLError: HTTPSConnectionPool(host='ssa.gov', port=443): Max retries exceeded with url: /policy/docs/progdesc/ssptw/2006-2007/africa/ghana.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CE"
+  },
+  {
+   "url": "https://www.ssa.gov/policy/docs/progdesc/ssptw/2016-2017/africa/ghana.html",
+   "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.ssa.gov/policy/docs/progdesc/ssptw/2016-2017/africa/ghana.html"
+  },
+  {
+   "url": "https://afro.who.int/news/malaria-vaccine-pilot-launched-ghana",
+   "status": 200,
+   "passages": 7
+  },
+  {
+   "url": "https://www.who.int/news-room/photo-story/detail/the-malaria-vaccine-first-babies",
+   "status": 200,
+   "passages": 8
+  },
+  {
+   "url": "https://globaltaxnews.ey.com/news/2025-0844",
+   "status": 200,
+   "passages": 17
+  },
+  {
+   "url": "https://www.open.ssa.gov/policy/docs/progdesc/ssptw/2014-2015/africa/ghana.pdf",
+   "error": "SSLError: HTTPSConnectionPool(host='www.open.ssa.gov', port=443): Max retries exceeded with url: /policy/docs/progdesc/ssptw/2014-2015/africa/ghana.pdf (Caused by SSLError(SSLCertVerificationError(1, "
+  },
+  {
+   "url": "https://www.ssnit.org.gh/?p=9",
+   "error": "HTTPError: 404 Client Error: Not Found for url: https://www.ssnit.org.gh/?p=9"
+  },
+  {
+   "url": "https://www.britannica.com/place/Ghana/Government-and-society",
+   "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.britannica.com/place/Ghana/Government-and-society"
+  },
+  {
+   "url": "https://oxfordbusinessgroup.com/reports/ghana/2020-report/economy/body-politic-elections-solidify-a-prolonged-period-of-democratic-rule",
+   "status": 200,
+   "passages": 0
+  },
+  {
+   "url": "https://oxfordbusinessgroup.com/reports/ghana/2022-report/economy/body-politic-a-briefing-on-ghanas-political-structure-and-most-recent-general-elections",
+   "status": 200,
+   "passages": 0
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Elections_in_Ghana",
+   "status": 200,
+   "passages": 6
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Homowo",
+   "status": 200,
+   "passages": 21
+  },
+  {
+   "url": "https://ghanaculture.gov.gh/festivals-list/",
+   "status": 200,
+   "passages": 1
+  },
+  {
+   "url": "https://www.graphic.com.gh/entertainment/showbiz-news/ghana-month-vibrant-festivals-showcasing-our-rich-heritage.html",
+   "status": 200,
+   "passages": 8
+  },
+  {
+   "url": "https://Www.wikipedia.org/wiki/Ghanaian_name",
+   "status": 200,
+   "passages": 11
+  }
+ ]
+}
