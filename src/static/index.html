@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Local language assistant</title>
+<style>
+  :root { --bg:#f7f5f0; --card:#fff; --ink:#1f2328; --muted:#5b6168; --line:#e3ded3; --accent:#9b4d16; --user:#f1e6d8; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#16181b; --card:#1f2226; --ink:#e8e6e1; --muted:#a2a7ad; --line:#30343a; --accent:#e39a5f; --user:#2c2620; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:16px; display:flex; flex-direction:column; min-height:100vh; }
+  h1 { font-size:20px; margin:8px 0 2px; }
+  .sub { color:var(--muted); font-size:14px; margin:0 0 12px; }
+  .pickers { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:12px; }
+  label { font-size:14px; color:var(--muted); display:flex; flex-direction:column; gap:4px; }
+  select, textarea, button { font:inherit; color:inherit; }
+  select { padding:8px; border:1px solid var(--line); border-radius:8px; background:var(--card); min-width:170px; }
+  #log { flex:1; display:flex; flex-direction:column; gap:10px; padding:8px 0 16px; }
+  .msg { padding:10px 12px; border-radius:12px; max-width:90%; white-space:pre-wrap; overflow-wrap:anywhere; }
+  .me { align-self:flex-end; background:var(--user); }
+  .bot { align-self:flex-start; background:var(--card); border:1px solid var(--line); }
+  .meta { font-size:13px; color:var(--muted); margin-top:6px; }
+  .meta a { color:var(--accent); }
+  details { margin-top:6px; font-size:13px; color:var(--muted); }
+  form { display:flex; gap:8px; position:sticky; bottom:0; background:var(--bg); padding:8px 0; }
+  textarea { flex:1; min-height:48px; padding:10px; border:1px solid var(--line); border-radius:10px; background:var(--card); resize:vertical; }
+  button { padding:0 18px; border:0; border-radius:10px; background:var(--accent); color:#fff; cursor:pointer; }
+  button:disabled { opacity:.6; cursor:wait; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Local language assistant</h1>
+  <p class="sub">Ask in Twi, Ga, Ewe, Hausa or English. Answers come from Wikipedia and official Ghanaian pages, with sources, or it says it doesn't know. Translation can be wrong, especially for Ga.</p>
+  <div class="pickers">
+    <label>I'm writing in <select id="lang"></select></label>
+    <label>Reply in <select id="reply"></select></label>
+  </div>
+  <div id="log" aria-live="polite"></div>
+  <form id="f">
+    <textarea id="q" placeholder="Type your question" required></textarea>
+    <button id="send">Ask</button>
+  </form>
+</main>
+<script>
+const LANGS = {en:"English", twi:"Twi (Akan)", gaa:"Ga", ewe:"Ewe", hau:"Hausa"};
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+for (const id of ["lang","reply"]) {
+  const sel = document.getElementById(id);
+  for (const [k,v] of Object.entries(LANGS)) sel.insertAdjacentHTML("beforeend", `<option value="${k}">${v}</option>`);
+}
+document.getElementById("lang").addEventListener("change", e => { document.getElementById("reply").value = e.target.value; });
+const log = document.getElementById("log");
+function add(cls, html) { const d = document.createElement("div"); d.className = "msg " + cls; d.innerHTML = html; log.appendChild(d); d.scrollIntoView({block:"end"}); return d; }
+document.getElementById("f").addEventListener("submit", async e => {
+  e.preventDefault();
+  const q = document.getElementById("q"), btn = document.getElementById("send");
+  const text = q.value.trim(); if (!text) return;
+  add("me", esc(text)); q.value = ""; btn.disabled = true;
+  const wait = add("bot", "Thinking…");
+  try {
+    const r = await fetch("/chat", {method:"POST", headers:{"Content-Type":"application/json"},
+      body: JSON.stringify({message:text, lang:document.getElementById("lang").value, reply_lang:document.getElementById("reply").value})});
+    const d = await r.json();
+    let html = esc(d.reply || "");
+    if (d.sources && d.sources.length) {
+      html += `<div class="meta">Sources: ` + d.sources.map(s => {
+        const href = /^https:\/\//.test(s.url) ? s.url : "#";
+        return `[${Number(s.n)}] <a href="${esc(href)}" target="_blank" rel="noopener">${esc(s.title)}</a>`;
+      }).join(" · ") + `</div>`;
+    }
+    if (d.question_en) html += `<details><summary>How it understood you</summary>Question in English: ${esc(d.question_en)}<br>Answer in English: ${esc(d.answer_en)}</details>`;
+    wait.innerHTML = html;
+  } catch (err) { wait.textContent = "Could not reach the assistant."; }
+  btn.disabled = false;
+});
+</script>
+</body>
+</html>
