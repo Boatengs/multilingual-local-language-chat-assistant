@@ -41,16 +41,29 @@ def flores(n: int | None = None) -> pd.DataFrame:
     def read(code):
         return tar.extractfile(f"flores200_dataset/devtest/{code}.devtest").read().decode().splitlines()
 
-    meta = tar.extractfile("flores200_dataset/metadata_devtest.tsv").read().decode().splitlines()
-    header = meta[0].split("\t")
-    topics = [dict(zip(header, m.split("\t"), strict=False)).get("topic", "") for m in meta[1:]]
+    meta_name = next((m for m in tar.getnames() if m.endswith("metadata_devtest.tsv")), None)
+    topics: list[str] = []
+    if meta_name:
+        meta = tar.extractfile(meta_name).read().decode().splitlines()
+        header = meta[0].split("\t")
+        topics = [dict(zip(header, m.split("\t"), strict=False)).get("topic", "") for m in meta[1:]]
     en = read("eng_Latn")
     rows = []
     for lang, code in FLORES_CODES.items():
         loc = read(code)
         assert len(loc) == len(en)
         for i, (e, t) in enumerate(zip(en, loc, strict=True)):
-            rows.append({"id": f"flores_{lang}_{i}", "set": "flores", "lang": lang, "en": e.strip(), "local": t.strip(), "source_side": "en", "domain": topics[i] if i < len(topics) else ""})
+            rows.append(
+                {
+                    "id": f"flores_{lang}_{i}",
+                    "set": "flores",
+                    "lang": lang,
+                    "en": e.strip(),
+                    "local": t.strip(),
+                    "source_side": "en",
+                    "domain": topics[i] if i < len(topics) else "",
+                }
+            )
     return pd.DataFrame(rows, columns=COLUMNS)
 
 
@@ -65,7 +78,17 @@ def ghananlp(n_per_lang: int = 500, seed: int = 42) -> pd.DataFrame:
             df = df.dropna(subset=["text", "label"])
             for r in df.itertuples():
                 en, loc = (r.text, r.label) if original == "en" else (r.label, r.text)
-                pool.append({"id": f"ghananlp_{lang}_{r.id}", "set": "ghananlp", "lang": lang, "en": str(en).strip(), "local": str(loc).strip(), "source_side": original, "domain": ""})
+                pool.append(
+                    {
+                        "id": f"ghananlp_{lang}_{r.id}",
+                        "set": "ghananlp",
+                        "lang": lang,
+                        "en": str(en).strip(),
+                        "local": str(loc).strip(),
+                        "source_side": original,
+                        "domain": "",
+                    }
+                )
         # drop exact duplicate pairs and very short lines
         seen, uniq = set(), []
         for p in pool:

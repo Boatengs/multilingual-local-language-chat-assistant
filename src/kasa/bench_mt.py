@@ -1,13 +1,12 @@
 """Translate every test set in both directions with one model, one shard at a time.
 
-    python -m kasa.bench_mt run --model nllb_600m --data data/mt --out preds --shard 0 --n-shards 4
-    python -m kasa.bench_mt report --data data/mt --preds preds --out results/mt
+python -m kasa.bench_mt run --model nllb_600m --data data/mt --out preds --shard 0 --n-shards 4
+python -m kasa.bench_mt report --data data/mt --preds preds --out results/mt
 """
 
 from __future__ import annotations
 
 import argparse
-import json
 from pathlib import Path
 
 import numpy as np
@@ -47,7 +46,18 @@ def run(model_name: str, data: Path, out: Path, shard: int, n_shards: int) -> No
             continue
         texts = g["en" if src == "en" else "local"].tolist()
         hyp, secs = timed(model, texts, src, tgt)
-        part = pd.DataFrame({"id": g["id"].values, "set": st, "lang": lang, "direction": f"{src}>{tgt}", "model": model_name, "hyp": hyp, "seconds_total": secs, "n": len(texts)})
+        part = pd.DataFrame(
+            {
+                "id": g["id"].values,
+                "set": st,
+                "lang": lang,
+                "direction": f"{src}>{tgt}",
+                "model": model_name,
+                "hyp": hyp,
+                "seconds_total": secs,
+                "n": len(texts),
+            }
+        )
         rows.append(part)
         pd.concat(rows, ignore_index=True).to_parquet(path, index=False)
         print(f"{key} {lang} {len(texts)} sentences {secs:.0f}s", flush=True)
@@ -87,14 +97,32 @@ def report(data: Path, preds: Path, out: Path) -> None:
         hyps = g["hyp"].fillna("").tolist()
         lo, hi = bootstrap_chrf(hyps, refs)
         secs = float(g.drop_duplicates(["seconds_total", "n"])["seconds_total"].sum())
-        rows.append({"model": model, "set": st, "lang": lang, "direction": direction, "n": len(g), "chrf": chrf(hyps, refs), "chrf_lo": lo, "chrf_hi": hi, "bleu": bleu(hyps, refs), "sec_per_sentence": secs / len(g)})
+        rows.append(
+            {
+                "model": model,
+                "set": st,
+                "lang": lang,
+                "direction": direction,
+                "n": len(g),
+                "chrf": chrf(hyps, refs),
+                "chrf_lo": lo,
+                "chrf_hi": hi,
+                "bleu": bleu(hyps, refs),
+                "sec_per_sentence": secs / len(g),
+            }
+        )
     r = pd.DataFrame(rows).sort_values(["set", "lang", "direction", "chrf"], ascending=[True, True, True, False])
     out.mkdir(parents=True, exist_ok=True)
     r.to_csv(out / "scores.csv", index=False)
     p.to_parquet(out / "predictions.parquet", index=False)
     L = ["# Translation scores", "", "chrF++ (0 to 100, higher is better) with 95% bootstrap intervals, and BLEU.", ""]
     for (st, lang, direction), g in r.groupby(["set", "lang", "direction"], sort=True):
-        L += [f"## {st}, {LANGS.get(lang, {}).get('name', lang)}, {direction}", "", "| Model | Sentences | chrF++ | BLEU | Seconds per sentence |", "|---|---|---|---|---|"]
+        L += [
+            f"## {st}, {LANGS.get(lang, {}).get('name', lang)}, {direction}",
+            "",
+            "| Model | Sentences | chrF++ | BLEU | Seconds per sentence |",
+            "|---|---|---|---|---|",
+        ]
         for x in g.itertuples():
             L.append(f"| {x.model} | {x.n} | {x.chrf:.1f} ({x.chrf_lo:.1f} to {x.chrf_hi:.1f}) | {x.bleu:.1f} | {x.sec_per_sentence:.2f} |")
         L.append("")
