@@ -110,17 +110,18 @@ def twi_terms() -> pd.DataFrame:
     from huggingface_hub import hf_hub_download
 
     df = pd.read_parquet(hf_hub_download("ghanaopenai/gloss-mt-parallel-en-twi", "data/test-00000-of-00001.parquet", repo_type="dataset"))
+    print("twi_terms columns:", list(df.columns))
     out = pd.DataFrame(
         {
-            "id": [f"twiterms_{i}_{c}" for i, c in zip(df["id"], df["chunk_index"], strict=True)],
+            "id": [f"twiterms_{i}" for i in range(len(df))],
             "set": "twi_terms",
             "lang": "twi",
             "en": df["english"].str.replace(r"^#+\s*", "", regex=True),
             "local": df["twi"].str.replace(r"^#+\s*", "", regex=True),
             "source_side": "en",
-            "domain": df["source"],
-            "gold_terms": [json.dumps(list(g), ensure_ascii=False, default=str) for g in df["gold_terms"]],
-            "glossary": [json.dumps(list(g), ensure_ascii=False, default=str) for g in df["glossary"]],
+            "domain": df["source"] if "source" in df else "",
+            "gold_terms": [json.dumps(list(g), ensure_ascii=False, default=str) for g in df["gold_terms"]] if "gold_terms" in df else "[]",
+            "glossary": [json.dumps(list(g), ensure_ascii=False, default=str) for g in df["glossary"]] if "glossary" in df else "[]",
         }
     )
     return out
