@@ -30,6 +30,18 @@ def page_passages(url: str, html: str) -> list[Passage]:
     main = soup.find("main") or soup.find("article") or soup.body or soup
     wrapper = f'<div class="mw-parser-output">{main.decode_contents()}</div>'
     ps = html_to_passages(title, wrapper, 0)
+    if not ps:
+        # pages built from bare divs: fall back to the text lines, in chunks of about 120 words
+        lines = [re.sub(r"\s+", " ", x).strip() for x in main.get_text("\n").split("\n")]
+        lines = [x for x in lines if len(x.split()) >= 4]
+        buf: list[str] = []
+        for x in lines:
+            buf.append(x)
+            if sum(len(b.split()) for b in buf) >= 120:
+                ps.append(Passage(title, "", "\n".join(buf), 0))
+                buf = []
+        if buf:
+            ps.append(Passage(title, "", "\n".join(buf), 0))
     for p in ps:
         p.source_url = url
     return ps
