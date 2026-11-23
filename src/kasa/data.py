@@ -38,10 +38,13 @@ def flores(n: int | None = None) -> pd.DataFrame:
     raw = urllib.request.urlopen(FLORES_URL, timeout=600).read()
     tar = tarfile.open(fileobj=io.BytesIO(raw))
 
-    def read(code):
-        return tar.extractfile(f"flores200_dataset/devtest/{code}.devtest").read().decode().splitlines()
+    names = tar.getnames()
 
-    meta_name = next((m for m in tar.getnames() if m.endswith("metadata_devtest.tsv")), None)
+    def read(code):
+        name = next(m for m in names if m.endswith(f"devtest/{code}.devtest"))
+        return tar.extractfile(name).read().decode().splitlines()
+
+    meta_name = next((m for m in names if m.endswith("metadata_devtest.tsv")), None)
     topics: list[str] = []
     if meta_name:
         meta = tar.extractfile(meta_name).read().decode().splitlines()
