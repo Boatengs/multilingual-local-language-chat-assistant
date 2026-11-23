@@ -19,17 +19,17 @@
   {
    "url": "https://nia.gov.gh/?p=494",
    "status": 200,
-   "passages": 0
+   "passages": 7
   },
   {
    "url": "https://ec.gov.gh/registration/",
    "status": 200,
-   "passages": 0
+   "passages": 7
   },
   {
    "url": "https://ec.gov.gh/?p=128",
    "status": 200,
-   "passages": 0
+   "passages": 7
   },
   {
    "url": "https://gra.gov.gh/e-levy",
@@ -83,12 +83,12 @@
   {
    "url": "https://oxfordbusinessgroup.com/reports/ghana/2020-report/economy/body-politic-elections-solidify-a-prolonged-period-of-democratic-rule",
    "status": 200,
-   "passages": 0
+   "passages": 16
   },
   {
    "url": "https://oxfordbusinessgroup.com/reports/ghana/2022-report/economy/body-politic-a-briefing-on-ghanas-political-structure-and-most-recent-general-elections",
    "status": 200,
-   "passages": 0
+   "passages": 14
   },
   {
    "url": "https://en.wikipedia.org/wiki/Elections_in_Ghana",
