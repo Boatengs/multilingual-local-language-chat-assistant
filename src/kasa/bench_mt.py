@@ -14,7 +14,7 @@ import pandas as pd
 
 from . import LANGS
 
-SETS = ["flores", "ghananlp", "twi_terms"]
+SETS = ["flores", "ghananlp"]  # twi_terms chunks are long transcripts; scored separately for terms
 
 
 def load_sets(data: Path) -> pd.DataFrame:
